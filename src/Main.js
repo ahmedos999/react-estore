@@ -1,4 +1,6 @@
 import img from './/imgs/1-1.png';
+import { FaHeart } from "react-icons/fa";
+
 
 const Main = () => {
     return ( <div className="maincontent">
@@ -18,7 +20,7 @@ const Main = () => {
             <h4>Nike Snikers</h4>
             <p>High quailty shoes for men and women</p>
             <div className="btns">
-                <button className='fav'>Favorite</button>
+                <button className='fav'><FaHeart style={{color: 'red'}}></FaHeart>Favorite</button>
                 <button className='buy'>Buy Now</button>
             </div>
         </div>

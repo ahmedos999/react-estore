@@ -4,6 +4,9 @@
   font-family: 'Poppins';
   color: #333;
 }
+button{
+  cursor: pointer;
+}
     /* navbar style start */
 .nav{
   margin: 20px;
@@ -74,6 +77,9 @@
   font-size: 16px;
   margin: 0 10px;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .buy{
   border: 2px solid black;
@@ -98,4 +104,8 @@
   height: 5px;
   width: 2px;
   background: #afaeae;
+}
+.heart{
+  color: red;
+  color: aqua ;
 }
