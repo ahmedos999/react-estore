@@ -31,6 +31,33 @@ const Main = () => {
                 <button className='buy'>Buy Now</button>
             </div>
         </div>
+        <div className="card">
+            <img src={img} alt="" />
+            <h4>Nike Snikers</h4>
+            <p>High quailty shoes for men and women</p>
+            <div className="btns">
+                <button className='fav'>Favorite</button>
+                <button className='buy'>Buy Now</button>
+            </div>
+        </div>
+        <div className="card">
+            <img src={img} alt="" />
+            <h4>Nike Snikers</h4>
+            <p>High quailty shoes for men and women</p>
+            <div className="btns">
+                <button className='fav'>Favorite</button>
+                <button className='buy'>Buy Now</button>
+            </div>
+        </div>
+        <div className="card">
+            <img src={img} alt="" />
+            <h4>Nike Snikers</h4>
+            <p>High quailty shoes for men and women</p>
+            <div className="btns">
+                <button className='fav'>Favorite</button>
+                <button className='buy'>Buy Now</button>
+            </div>
+        </div>
         </div>
         
     </div> );

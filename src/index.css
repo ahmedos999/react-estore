@@ -35,8 +35,7 @@
   color: #4b4b4b;
 }
 .card{
-  margin-top: 20px;
-  margin-right: 20px;
+  margin: 20px 20px 10px 0px;
   padding: 10px;
   border-radius: 6px;
   border: 3px solid #868686;
@@ -89,4 +88,14 @@
   display: flex;
   overflow: auto;
   white-space: nowrap;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  background: #000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar{
+  height: 5px;
+  width: 2px;
+  background: #afaeae;
 }
