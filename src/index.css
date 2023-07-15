@@ -40,7 +40,7 @@ button{
 .card{
   margin: 20px 20px 10px 0px;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 3px;
   border: 3px solid #868686;
   height: 400px;
   width: 320px;
@@ -106,6 +106,41 @@ button{
   background: #afaeae;
 }
 .heart{
-  color: red;
-  color: aqua ;
+  color: red !important;
+}
+
+
+/* main content style ends */
+
+/* tabs style start */
+.tabs{
+  display: flex;
+  justify-content: center;
+}
+.tabs ul{
+  display: flex;
+  list-style: none;
+  border: 2px solid #4b4b4b;
+  /* padding: 12px; */
+  padding: 0;
+  border-radius: 2px;
+}
+.tabs ul li{  
+  /* margin: 0px 8px; */
+  cursor: pointer;
+  background-color: #4b4b4b;
+  padding: 4px 50px;
+  color: #d8d8d8;
+  transition: 200ms ease-in;
+}
+.tabs ul li:hover{  
+  /* margin: 0px 8px; */
+  background-color: #d8d8d8;
+  text-decoration: underline;
+  color: #4b4b4b;
+}
+.active{
+  background-color: #e5e5e5 !important;
+  text-decoration: underline;
+  color: #4b4b4b !important;
 }
