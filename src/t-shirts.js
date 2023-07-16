@@ -1,21 +1,21 @@
-import img from './/imgs/1-1.png';
+import img from './/imgs/t.png';
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
 
 
-const Main = () => {
-    const {data:shoes,isPending,error} = useFetch('http://localhost:8000/shoes')
+const Tshirts = () => {
+    const {data:tshirts,isPending,error} = useFetch('http://localhost:8000/tshirts')
 
     return ( <div className="maincontent">
         <h2>Explore our Lastest Products</h2>
         <div className="show">
         {isPending && <div>Loading...</div>}
         {error && <div> {error} </div>}
-        {shoes && shoes.map((shoe)=>(
+        {tshirts && tshirts.map((tshirt)=>(
             <div className="card">
             <img src={img} alt="" />
-            <h4>{shoe.name}</h4>
-            <p>{shoe.description}</p>
+            <h4>{tshirt.name}</h4>
+            <p>{tshirt.description}</p>
             <div className="btns">
                 <button className='fav'>Favorite</button>
                 <button className='buy'>Buy Now</button>
@@ -27,4 +27,4 @@ const Main = () => {
     </div> );
 }
  
-export default Main;
+export default Tshirts;

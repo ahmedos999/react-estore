@@ -1,0 +1,54 @@
+{
+    "shoes": [
+      {
+        "name": "Nike shoes",
+        "description": "high Quailty shoes for men and women",
+        "price": 20,
+        "id": 1
+      },
+      {
+        "name": "Nike shoes",
+        "description": "Good for rain",
+        "price": 20,
+        "id": 2
+      },
+      {
+        "name": "Nike shoes",
+        "description": "fittness shoes",
+        "price": 20,
+        "id": 3
+      },
+      {
+        "name": "Nike shoes",
+        "description": "Good for running",
+        "price": 20,
+        "id": 4
+      }
+    ],
+    "tshirts": [
+        {
+          "name": "Red T-Shirt",
+          "description": "high Quailty T-shirt for men and women",
+          "price": 20,
+          "id": 1
+        },
+        {
+          "name": "Red T-Shirt",
+          "description": "Match every outfit",
+          "price": 20,
+          "id": 2
+        },
+        {
+          "name": "Red T-Shirt",
+          "description": "Fittness Shirt",
+          "price": 20,
+          "id": 3
+        },
+        {
+          "name": "Red T-Shirt",
+          "description": "Good for swimming",
+          "price": 20,
+          "id": 4
+        }
+      ]
+  }
