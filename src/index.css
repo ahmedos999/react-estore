@@ -140,6 +140,9 @@ button{
   text-decoration: underline;
   color: #4b4b4b;
 }
+.tabs ul a{
+  text-decoration: none;
+}
 .active{
   background-color: #e5e5e5 !important;
   text-decoration: underline;

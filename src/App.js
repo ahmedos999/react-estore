@@ -3,14 +3,24 @@ import Main from './Main';
 import Tabs from './Tabs';
 import Tshirts from './t-shirts';
 
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <Navbar></Navbar>
       <Tabs></Tabs>
-      <Main></Main>
-      <Tshirts></Tshirts>
+      <Switch>
+        <Route exact path="/">
+            <Main></Main>
+        </Route>
+        <Route exact path="/tshirts">
+            <Tshirts></Tshirts>
+        </Route>
+      </Switch>
     </div>
+    </Router>
   );
 }
 
