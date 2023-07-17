@@ -15,7 +15,7 @@ const Tabs = () => {
         <ul>
             <Link to="/"><li className="active" onClick={handleClick}>Shoes</li></Link>
             <Link to="/tshirts"><li onClick={handleClick}>T-Shirts</li></Link>
-            <li onClick={handleClick}>Pants</li>
+            <Link to="/pants"><li onClick={handleClick}>Pants</li></Link>
             <li onClick={handleClick}>Accessories</li>
             <li onClick={handleClick}>Glasses</li>
         </ul>

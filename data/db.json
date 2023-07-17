@@ -14,7 +14,7 @@
       },
       {
         "name": "Nike shoes",
-        "description": "fittness shoes",
+        "description": "Fittness shoes",
         "price": 20,
         "id": 3
       },
@@ -23,6 +23,12 @@
         "description": "Good for running",
         "price": 20,
         "id": 4
+      },
+      {
+        "name": "Nike shoes",
+        "description": "Good for Showing of",
+        "price": 20,
+        "id": 5
       }
     ],
     "tshirts": [
@@ -30,25 +36,63 @@
           "name": "Red T-Shirt",
           "description": "high Quailty T-shirt for men and women",
           "price": 20,
-          "id": 1
+          "id": 6
         },
         {
           "name": "Red T-Shirt",
           "description": "Match every outfit",
           "price": 20,
-          "id": 2
+          "id": 7
         },
         {
           "name": "Red T-Shirt",
           "description": "Fittness Shirt",
           "price": 20,
-          "id": 3
+          "id": 8
         },
         {
           "name": "Red T-Shirt",
           "description": "Good for swimming",
           "price": 20,
-          "id": 4
+          "id": 9
+        },
+        {
+          "name": "Red T-Shirt",
+          "description": "Good for Running",
+          "price": 20,
+          "id": 10
+        }
+      ],
+      "pants": [
+        {
+          "name": "Max Pants",
+          "description": "high Quailty Pants for men and women",
+          "price": 20,
+          "id": 11
+        },
+        {
+          "name": "Heavy Pants",
+          "description": "Match every outfit",
+          "price": 20,
+          "id": 12
+        },
+        {
+          "name": "Outfit Pants",
+          "description": "Fittness Pants",
+          "price": 20,
+          "id": 13
+        },
+        {
+          "name": "Big pants",
+          "description": "Good for Running",
+          "price": 20,
+          "id": 14
+        },
+        {
+          "name": "Cool pants",
+          "description": "Good for Showing of",
+          "price": 20,
+          "id": 15
         }
       ]
   }
