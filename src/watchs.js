@@ -12,6 +12,7 @@ const Watch = () => {
     {watchs && watchs.map((watch)=>(
         <div className="card">
         <img src={img} alt="" />
+        <div className="badge"><h5>50% Off</h5></div>
         <h4>{watch.name}</h4>
         <p>{watch.description}</p>
         <div className="btns">

@@ -11,6 +11,7 @@ const Glasses = () => {
     {glasses && glasses.map((glasse)=>(
         <div className="card">
         <img src={img} alt="" />
+        <div className="badge"><h5>50% Off</h5></div>
         <h4>{glasse.name}</h4>
         <p>{glasse.description}</p>
         <div className="btns">

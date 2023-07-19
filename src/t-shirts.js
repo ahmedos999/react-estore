@@ -14,6 +14,7 @@ const Tshirts = () => {
         {tshirts && tshirts.map((tshirt)=>(
             <div className="card">
             <img src={img} alt="" />
+            <div className="badge"><h5>50% Off</h5></div>
             <h4>{tshirt.name}</h4>
             <p>{tshirt.description}</p>
             <div className="btns">

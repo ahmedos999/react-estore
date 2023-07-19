@@ -14,6 +14,7 @@ const Main = () => {
         {shoes && shoes.map((shoe)=>(
             <div className="card">
             <img src={img} alt="" />
+            <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>
             <p>{shoe.description}</p>
             <div className="btns">
