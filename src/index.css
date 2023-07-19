@@ -126,6 +126,16 @@ button{
 .badge h5{
   color: #e0e0e0;
 }
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price h6{
+  font-size: 16px;
+  color: #4b4b4b;
+  letter-spacing: 0.5px;
+}
 
 
 /* main content style ends */

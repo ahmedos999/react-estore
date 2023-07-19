@@ -16,7 +16,7 @@ const Main = () => {
             <img src={img} alt="" />
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>
-            <p>{shoe.description}</p>
+            <div className="price"><p>{shoe.description}</p> <h6>{shoe.price}$</h6></div>
             <div className="btns">
                 <button className='fav'>Favorite</button>
                 <button className='buy'>Buy Now</button>

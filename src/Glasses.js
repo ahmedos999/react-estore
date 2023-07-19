@@ -13,7 +13,7 @@ const Glasses = () => {
         <img src={img} alt="" />
         <div className="badge"><h5>50% Off</h5></div>
         <h4>{glasse.name}</h4>
-        <p>{glasse.description}</p>
+        <div className="price"><p>{glasse.description}</p> <h6>{glasse.price}$</h6></div>
         <div className="btns">
             <button className='fav'>Favorite</button>
             <button className='buy'>Buy Now</button>

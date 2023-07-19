@@ -16,7 +16,7 @@ const Tshirts = () => {
             <img src={img} alt="" />
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{tshirt.name}</h4>
-            <p>{tshirt.description}</p>
+            <div className="price"><p>{tshirt.description}</p> <h6>{tshirt.price}$</h6></div>
             <div className="btns">
                 <button className='fav'>Favorite</button>
                 <button className='buy'>Buy Now</button>

@@ -14,7 +14,7 @@ const Watch = () => {
         <img src={img} alt="" />
         <div className="badge"><h5>50% Off</h5></div>
         <h4>{watch.name}</h4>
-        <p>{watch.description}</p>
+        <div className="price"><p>{watch.description}</p> <h6>{watch.price}$</h6></div>
         <div className="btns">
             <button className='fav'>Favorite</button>
             <button className='buy'>Buy Now</button>
