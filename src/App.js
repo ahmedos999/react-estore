@@ -5,6 +5,7 @@ import Tshirts from './t-shirts';
 import Watch from './watchs';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import Pants from './Pants';
+import Glasses from './Glasses';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route exact path="/watchs">
           <Watch></Watch>
+        </Route>
+        <Route exact path="/glasses">
+          <Glasses></Glasses>
         </Route>
       </Switch>
     </div>

@@ -1,4 +1,4 @@
-import img from './/imgs/1-1.png';
+import img from './/imgs/S1.png';
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
 

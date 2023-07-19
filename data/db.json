@@ -33,31 +33,31 @@
     ],
     "tshirts": [
         {
-          "name": "Red T-Shirt",
+          "name": "Blue T-Shirt",
           "description": "high Quailty T-shirt for men and women",
           "price": 20,
           "id": 6
         },
         {
-          "name": "Red T-Shirt",
+          "name": "Blue T-Shirt",
           "description": "Match every outfit",
           "price": 20,
           "id": 7
         },
         {
-          "name": "Red T-Shirt",
+          "name": "Blue T-Shirt",
           "description": "Fittness Shirt",
           "price": 20,
           "id": 8
         },
         {
-          "name": "Red T-Shirt",
+          "name": "Blue T-Shirt",
           "description": "Good for swimming",
           "price": 20,
           "id": 9
         },
         {
-          "name": "Red T-Shirt",
+          "name": "Blue T-Shirt",
           "description": "Good for Running",
           "price": 20,
           "id": 10
@@ -93,6 +93,70 @@
           "description": "Good for Showing of",
           "price": 20,
           "id": 15
+        }
+      ],
+      "watchs": [
+        {
+          "name": "Rolex watch",
+          "description": "high Quailty watch for men and women",
+          "price": 20,
+          "id": 16
+        },
+        {
+          "name": "Heavy Watch",
+          "description": "Match every outfit",
+          "price": 20,
+          "id": 17
+        },
+        {
+          "name": "Outfit Watch",
+          "description": "Fittness Pants",
+          "price": 20,
+          "id": 18
+        },
+        {
+          "name": "Big Watch",
+          "description": "Good for Running",
+          "price": 20,
+          "id": 19
+        },
+        {
+          "name": "Cool Watch",
+          "description": "Good for Showing of",
+          "price": 20,
+          "id": 20
+        }
+      ],
+      "glasses": [
+        {
+          "name": "Sun Glasses",
+          "description": "high Quailty Glasses for men and women",
+          "price": 20,
+          "id": 16
+        },
+        {
+          "name": "Black Glasses",
+          "description": "Match every outfit",
+          "price": 20,
+          "id": 17
+        },
+        {
+          "name": "Outfit Glasses",
+          "description": "Cool Pants",
+          "price": 20,
+          "id": 18
+        },
+        {
+          "name": "Big Glasses",
+          "description": "Good for Daylight",
+          "price": 20,
+          "id": 19
+        },
+        {
+          "name": "Fun Glasses",
+          "description": "Good for Showing of",
+          "price": 20,
+          "id": 20
         }
       ]
   }

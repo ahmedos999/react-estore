@@ -1,6 +1,6 @@
 // import img from './/imgs/p1.jpg';
 // import img from './/imgs/p2.jpg';
-import img from './/imgs/p1-remove.png';
+import img from './/imgs/J1.png';
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
 

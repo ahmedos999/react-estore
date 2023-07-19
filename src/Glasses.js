@@ -1,19 +1,18 @@
-
-import img from './/imgs/w1.png';
+import img from './/imgs/G3.png';
 import useFetch from './useFetch';
 
-const Watch = () => {
-    const {data:watchs,isPending,error} = useFetch('http://localhost:8000/watchs')
+const Glasses = () => {
+    const {data:glasses,isPending,error} = useFetch('http://localhost:8000/glasses')
     return ( <div className="maincontent">
     <h2>Explore our Lastest Products</h2>
     <div className="show">
     {isPending && <div>Loading...</div>}
     {error && <div> {error} </div>}
-    {watchs && watchs.map((watch)=>(
+    {glasses && glasses.map((glasse)=>(
         <div className="card">
         <img src={img} alt="" />
-        <h4>{watch.name}</h4>
-        <p>{watch.description}</p>
+        <h4>{glasse.name}</h4>
+        <p>{glasse.description}</p>
         <div className="btns">
             <button className='fav'>Favorite</button>
             <button className='buy'>Buy Now</button>
@@ -25,4 +24,4 @@ const Watch = () => {
 </div> );
 }
  
-export default Watch;
+export default Glasses;
