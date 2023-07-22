@@ -3,6 +3,7 @@
 import img from './/imgs/J1.png';
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
+import {BsCartPlus} from "react-icons/bs"
 
 const Pants = () => {
     const {data:pants,isPending,error} = useFetch('http://localhost:8000/pants')

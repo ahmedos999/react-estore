@@ -1,6 +1,7 @@
 
 import img from './/imgs/w1.png';
 import useFetch from './useFetch';
+import {BsCartPlus} from "react-icons/bs"
 
 const Watch = () => {
     const {data:watchs,isPending,error} = useFetch('http://localhost:8000/watchs')

@@ -1,6 +1,7 @@
 import img from './/imgs/T1.png';
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
+import {BsCartPlus} from "react-icons/bs"
 
 
 const Tshirts = () => {
