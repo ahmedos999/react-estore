@@ -16,7 +16,7 @@ const Glasses = () => {
         <h4>{glasse.name}</h4>
         <div className="price"><p>{glasse.description}</p> <h6>{glasse.price}$</h6></div>
         <div className="btns">
-            <button className='fav'>Add To Cart</button>
+            <button className='fav'><BsCartPlus></BsCartPlus>Add To Cart</button>
             <button className='buy'>Buy Now</button>
         </div>
     </div>

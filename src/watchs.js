@@ -17,7 +17,7 @@ const Watch = () => {
         <h4>{watch.name}</h4>
         <div className="price"><p>{watch.description}</p> <h6>{watch.price}$</h6></div>
         <div className="btns">
-            <button className='fav'>Add To Cart</button>
+            <button className='fav'><BsCartPlus></BsCartPlus>Add To Cart</button>
             <button className='buy'>Buy Now</button>
         </div>
     </div>

@@ -19,7 +19,7 @@ const Tshirts = () => {
             <h4>{tshirt.name}</h4>
             <div className="price"><p>{tshirt.description}</p> <h6>{tshirt.price}$</h6></div>
             <div className="btns">
-                <button className='fav'>Add To Cart</button>
+                <button className='fav'><BsCartPlus></BsCartPlus>Add To Cart</button>
                 <button className='buy'>Buy Now</button>
             </div>
         </div>
