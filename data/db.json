@@ -1,33 +1,38 @@
 {
     "shoes": [
       {
-        "name": "Nike shoes",
-        "description": "high Quailty shoes",
+        "name": "Blue Nike",
+        "description": "Running shoes",
         "price": 20,
+        "img":"./imgs/S1.png",
         "id": 1
       },
       {
-        "name": "Nike shoes",
-        "description": "Good for rain",
-        "price": 20,
+        "name": "R&B Nike",
+        "description": "Good for Outfits",
+        "price": 28,
+        "img":"./imgs/S2.png",
         "id": 2
       },
       {
-        "name": "Nike shoes",
-        "description": "Fittness shoes",
-        "price": 20,
+        "name": "Black Shoes",
+        "description": "Good for suits",
+        "price": 35,
+        "img":"./imgs/S3.png",
         "id": 3
       },
       {
-        "name": "Nike shoes",
+        "name": "Sport adidas",
         "description": "Good for running",
-        "price": 20,
+        "price": 25,
+        "img":"./imgs/S4.png",
         "id": 4
       },
       {
-        "name": "Nike shoes",
-        "description": "Good for Showing of",
-        "price": 20,
+        "name": "Yellow Puma",
+        "description": "Good for Showing off",
+        "price": 18,
+        "img":"./imgs/S5.png",
         "id": 5
       }
     ],
