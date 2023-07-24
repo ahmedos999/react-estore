@@ -1,5 +1,4 @@
 
-import img from './/imgs/w1.png';
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
 
@@ -12,7 +11,7 @@ const Watch = () => {
     {error && <div> {error} </div>}
     {watchs && watchs.map((watch)=>(
         <div className="card">
-        <img src={img} alt="" />
+        <img src={require(`${watch.img}`)} alt="" />
         <div className="badge"><h5>50% Off</h5></div>
         <h4>{watch.name}</h4>
         <div className="price"><p>{watch.description}</p> <h6>{watch.price}$</h6></div>

@@ -1,4 +1,4 @@
-import img from './/imgs/G3.png';
+
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
 
@@ -11,7 +11,7 @@ const Glasses = () => {
     {error && <div> {error} </div>}
     {glasses && glasses.map((glasse)=>(
         <div className="card">
-        <img src={img} alt="" />
+        <img src={require(`${glasse.img}`)} alt="" />
         <div className="badge"><h5>50% Off</h5></div>
         <h4>{glasse.name}</h4>
         <div className="price"><p>{glasse.description}</p> <h6>{glasse.price}$</h6></div>
