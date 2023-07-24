@@ -14,7 +14,7 @@ const Tshirts = () => {
         {error && <div> {error} </div>}
         {tshirts && tshirts.map((tshirt)=>(
             <div className="card">
-            <img src={img} alt="" />
+            <img src={require(`${tshirt.img}`)} alt="" />
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{tshirt.name}</h4>
             <div className="price"><p>{tshirt.description}</p> <h6>{tshirt.price}$</h6></div>
