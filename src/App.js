@@ -6,6 +6,7 @@ import Watch from './watchs';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import Pants from './Pants';
 import Glasses from './Glasses';
+import Product from './productPage';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route exact path="/glasses">
           <Glasses></Glasses>
+        </Route>
+        <Route exact path="/product">
+          <Product></Product>
         </Route>
       </Switch>
     </div>

@@ -2,6 +2,7 @@
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
+import {Link} from 'react-router-dom';
 
 
 const Main = () => {
@@ -13,7 +14,7 @@ const Main = () => {
         {isPending && <div>Loading...</div>}
         {error && <div> {error} </div>}
         {shoes && shoes.map((shoe)=>(
-            <div className="card">
+            <Link to="/product"><div className="card">
             <img src={require(`${shoe.img}`)} alt="" />
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>
@@ -22,7 +23,7 @@ const Main = () => {
                 <button className='fav'><BsCartPlus></BsCartPlus>Add To Cart</button>
                 <button className='buy'>Buy Now</button>
             </div>
-        </div>
+        </div></Link>
         ))}
         </div>
         
