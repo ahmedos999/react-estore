@@ -13,21 +13,26 @@ function App() {
     <Router>
       <div className="App">
       <Navbar></Navbar>
-      <Tabs></Tabs>
+      
       <Switch>
         <Route exact path="/">
+        <Tabs></Tabs>
             <Main></Main>
         </Route>
         <Route exact path="/tshirts">
+        <Tabs></Tabs>
             <Tshirts></Tshirts>
         </Route>
         <Route exact path="/pants">
+        <Tabs></Tabs>
           <Pants></Pants>
         </Route>
         <Route exact path="/watchs">
+        <Tabs></Tabs>
           <Watch></Watch>
         </Route>
         <Route exact path="/glasses">
+        <Tabs></Tabs>
           <Glasses></Glasses>
         </Route>
         <Route exact path="/product">

@@ -220,6 +220,7 @@ button{
   margin: 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 .product-details h2{
   font-size: 32px;
