@@ -14,7 +14,7 @@ const Main = () => {
         {isPending && <div>Loading...</div>}
         {error && <div> {error} </div>}
         {shoes && shoes.map((shoe)=>(
-            <Link to="/product"><div className="card">
+            <Link to={`/product/${shoe.id}`}><div className="card">
             <img src={require(`${shoe.img}`)} alt="" />
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>

@@ -35,7 +35,7 @@ function App() {
         <Tabs></Tabs>
           <Glasses></Glasses>
         </Route>
-        <Route exact path="/product">
+        <Route exact path="/product/:id">
           <Product></Product>
         </Route>
       </Switch>
