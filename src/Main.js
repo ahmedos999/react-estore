@@ -3,10 +3,13 @@
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
 import {Link} from 'react-router-dom';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 const Main = () => {
-    const {data:shoes,isPending,error} = useFetch('http://localhost:8000/shoes')
+    const {name} = useParams();
+    console.log(name);
+    const {data:shoes,isPending,error} = useFetch('http://localhost:8000/'+name)
 
     return ( <div className="maincontent">
         <h2>Explore our Lastest Products</h2>
@@ -14,7 +17,7 @@ const Main = () => {
         {isPending && <div>Loading...</div>}
         {error && <div> {error} </div>}
         {shoes && shoes.map((shoe)=>(
-            <Link to={`/product/${shoe.id}`}><div className="card">
+            <Link to={`/${name}/${shoe.id}`}><div className="card">
             <img src={require(`${shoe.img}`)} alt="" />
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>

@@ -13,7 +13,7 @@ const Tabs = () => {
   };
     return ( <div className="tabs">
         <ul>
-            <Link to="/"><li className="active" onClick={handleClick}>Shoes</li></Link>
+            <Link to="/shoes"><li className="active" onClick={handleClick}>Shoes</li></Link>
             <Link to="/tshirts"><li onClick={handleClick}>T-Shirts</li></Link>
             <Link to="/pants"><li onClick={handleClick}>Pants</li></Link>
             <Link to="/watchs"><li onClick={handleClick}>Accessories</li></Link>

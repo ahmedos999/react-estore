@@ -6,8 +6,9 @@ import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import useFetch from './useFetch';
 
 const Product = () => {
-    const {id} = useParams()
-    const {data:shoe,isPending,error} = useFetch('http://localhost:8000/shoes/'+id)
+    var {id,product} = useParams()
+    console.log("the firts name is"+product+id)
+    const {data:shoe,isPending,error} = useFetch('http://localhost:8000/'+product+'/'+id)
 
     return (
          <div className="product-page">
@@ -20,7 +21,7 @@ const Product = () => {
         <h2>{shoe.name} <span><SiNike className='nike'></SiNike></span></h2>
         <p>This shoes are prefect for running and training they give you comfortable space for you foot, it also has good shoe floor that prevent foot from sweating.</p>
         <div className="rate"><BsStarFill className='rating-icon'/><BsStarFill className='rating-icon'/><BsStarFill className='rating-icon'/><BsStarFill className='rating-icon'/><BsStarHalf className='rating-icon'/></div>
-        <div className="original-price"><span>{shoe.price/2}</span>{shoe.price}</div>
+        <div className="original-price"><span>{shoe.price/2}$</span>{shoe.price}$</div>
 
         <div className="extra-info">
             <div className="delivery"><h4>Delivery Time</h4><p>2 Days</p></div>

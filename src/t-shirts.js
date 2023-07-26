@@ -2,10 +2,13 @@
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
+// import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 const Tshirts = () => {
     const {data:tshirts,isPending,error} = useFetch('http://localhost:8000/tshirts')
+    // const {name} = useParams();
+    // console.log('hahaha you got it');
 
     return ( <div className="maincontent">
         <h2>Explore our Lastest Products</h2>
