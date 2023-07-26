@@ -1,4 +1,4 @@
-import img from './/imgs/S1.png';
+
 import {BsStarFill} from "react-icons/bs"
 import {BsStarHalf} from "react-icons/bs"
 import {SiNike} from "react-icons/si"
@@ -14,7 +14,7 @@ const Product = () => {
         {isPending && <div>Loading...</div>}
         {error && <div> {error} </div>}
         
-        {shoe && <img src={img} alt="" />}
+        {shoe && <img src={require(`${shoe.img}`)} alt="" />}
         {shoe && <div className="product-details">
             
         <h2>{shoe.name} <span><SiNike className='nike'></SiNike></span></h2>
