@@ -33,13 +33,17 @@ button{
   margin-top: 20px;
   margin-left: 30px;
 }
-.maincontent h2{
+/* .maincontent-2 {
+  margin-top: 20px;
+  text-align: center;
+} */
+.maincontent>h2{
   color: #000;
 }
 .card:nth-child(1){
   margin-left: 20px;
 }
-.show a{
+.show>a{
   text-decoration: none;
   cursor:auto;
 }
@@ -66,11 +70,11 @@ button{
   scale: 1.04;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 25px 0 rgba(0, 0, 0, 0.29);
 }
-.card img{
+.card>img{
   height: 70%;
   width: 100%;
 }
-.card h4{
+.card>h4{
   font-weight:bold;
   color: #171717;
   font-size: 22px;
@@ -79,7 +83,7 @@ button{
   font-size: 14px;
   color: #7b7b7b;
 }
-.card .btns{
+.card>.btns{
   margin-top: 10px;
   display:  flex;
   justify-content: space-around;
@@ -107,6 +111,10 @@ button{
   display: flex;
   overflow: auto;
   white-space: nowrap;
+}
+.show-2{
+  display: flex;
+  justify-content: center;
 }
 
 ::-webkit-scrollbar-thumb:horizontal{
@@ -137,7 +145,7 @@ button{
   align-items: center;
   left: 0;
 }
-.badge h5{
+.badge>h5{
   color: #e0e0e0;
 }
 .price{
@@ -145,7 +153,7 @@ button{
   justify-content: space-between;
   align-items: center;
 }
-.price h6{
+.price>h6{
   font-size: 18px;
   color: #000;
   letter-spacing: 0.5px;
@@ -160,7 +168,7 @@ button{
   justify-content: center;
   
 }
-.tabs ul{
+.tabs>ul{
   display: flex;
   list-style: none;
   /* border: 2px solid #000; */
@@ -184,7 +192,7 @@ button{
   text-decoration: underline;
   color: #4b4b4b;
 }
-.tabs ul a{
+.tabs>ul>a{
   text-decoration: none;
 }
 .active{
@@ -226,7 +234,7 @@ button{
   max-width: 800px;
   max-height: 600px;
 }
-.product-details h2{
+.product-details>h2{
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -262,10 +270,10 @@ button{
   margin-bottom: 15px;
   padding-bottom: 2px;
 }
-.delivery h4{
+.delivery>h4{
   font-size: 16px;
 }
-.delivery p{
+.delivery>p{
   font-size: 14px;
   color: #7b7b7b;
 }
@@ -276,7 +284,7 @@ button{
   margin: 25px 0px;
   padding-bottom: 2px;
 }
-.Total h4{
+.Total>h4{
   font-size: 16px;
 }
 .Total>p{
@@ -302,4 +310,7 @@ button{
   scale: 1.1;
 }
 
-/* product page style start */
+/* product page style end */
+
+
+/* carsoul :start */

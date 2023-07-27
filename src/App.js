@@ -7,6 +7,7 @@ import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 // import Pants from './Pants';
 // import Glasses from './Glasses';
 import Product from './productPage';
+import Shopping from './Shopping';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         </Route>
         <Route exact path="/:name">
         <Tabs></Tabs>
-            <Main></Main>
+        <Shopping></Shopping>
         </Route>
         {/* <Route exact path="/:tshirts">
         <Tabs></Tabs>
