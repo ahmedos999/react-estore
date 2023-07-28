@@ -314,3 +314,49 @@ button{
 
 
 /* carsoul :start */
+.slider{
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  height: 500px;
+}
+.maincontent-2{
+  margin: 20px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.intro>h2{
+  font-size: 34px;
+  margin: 10px 0px;
+}
+.intro>p{
+  color: #4b4b4b;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.intro>button{
+  border: none;
+  border-radius: 5px;
+  padding: 6px 16px;
+  background-color: #000;
+  color: #f4f4f4;
+  font-size: 18px;
+  /* margin-right: auto; */
+}
+.test{
+  align-self: center;
+  justify-self: end;
+  width: 600px;
+  /* height: 500px; */
+}
+.into-icon{
+  font-size: 34px;
+}
