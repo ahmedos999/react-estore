@@ -360,3 +360,6 @@ button{
 .into-icon{
   font-size: 34px;
 }
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
