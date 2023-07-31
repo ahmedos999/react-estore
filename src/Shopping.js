@@ -2,8 +2,9 @@
 // import { FaHeart } from "react-icons/fa";
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
-import {Link} from 'react-router-dom';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import {Link, useParams} from 'react-router-dom';
+import Tabs from './Tabs';
+// import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 const Shopping = () => {
@@ -11,7 +12,9 @@ const Shopping = () => {
     console.log(name);
     const {data:shoes,isPending,error} = useFetch('http://localhost:8000/'+name)
 
-    return ( <div className="maincontent">
+    return ( <div>
+        <Tabs></Tabs>
+        <div className="maincontent">
         <h2>Explore our Lastest Products</h2>
         <div className="show">
         {isPending && <div>Loading...</div>}
@@ -30,7 +33,7 @@ const Shopping = () => {
         ))}
         </div>
         
-    </div> );
+    </div></div> );
 }
  
 export default Shopping;

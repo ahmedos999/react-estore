@@ -2,7 +2,8 @@
 import {BsStarFill} from "react-icons/bs"
 import {BsStarHalf} from "react-icons/bs"
 import {SiNike} from "react-icons/si"
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+// import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import {useParams} from 'react-router-dom';
 import useFetch from './useFetch';
 
 const Product = () => {

@@ -1,9 +1,9 @@
 import Navbar from './Navbar'
 import Main from './Main';
-import Tabs from './Tabs';
+// import Tabs from './Tabs';
 // import Tshirts from './t-shirts';
 // import Watch from './watchs';
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 // import Pants from './Pants';
 // import Glasses from './Glasses';
 import Product from './productPage';
@@ -20,25 +20,21 @@ function App() {
       <div className="App">
       <Navbar></Navbar>
       
-      <Switch>
-      <Route exact path="/Cart">
-          <Cart></Cart>
+      <Routes>
+        <Route path="/" element={
+            <Main/>}>
+  
         </Route>
-        <Route exact path="/">
-        <Tabs></Tabs>
-            <Main></Main>
+        <Route  path="/:name" element={<Shopping></Shopping>}>
+        
         </Route>
-        <Route exact path="/:name">
-        <Tabs></Tabs>
-        <Shopping></Shopping>
+        <Route  path="/:product/:id" element={<Product></Product>}>
+          
         </Route>
-        <Route exact path="/:product/:id">
-          <Product></Product>
+        <Route  path="/Cart" element={<Cart></Cart>}>
+          
         </Route>
-        <Route exact path="/Cart">
-          <Cart></Cart>
-        </Route>
-      </Switch>
+      </Routes>
     </div>
     </Router>
   );
