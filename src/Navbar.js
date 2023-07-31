@@ -1,6 +1,7 @@
 import { BiCart } from 'react-icons/bi';
 //BsFillPersonFill
 import { BsFillPersonFill } from 'react-icons/bs';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
     return ( 
@@ -8,7 +9,8 @@ const Navbar = () => {
     <div className="nav">
         <h4>E-Store</h4>
         <div className="icons">
-        <BiCart className='icon'/><BsFillPersonFill className='icon'></BsFillPersonFill>
+            <Link to="/Cart"><BiCart className='icon'/></Link>
+            <BsFillPersonFill className='icon'></BsFillPersonFill>
         </div>
     </div> );
 }

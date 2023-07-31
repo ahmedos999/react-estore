@@ -8,6 +8,11 @@ import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 // import Glasses from './Glasses';
 import Product from './productPage';
 import Shopping from './Shopping';
+import Cart from './Cart';
+
+ 
+
+
 
 function App() {
   return (
@@ -16,6 +21,9 @@ function App() {
       <Navbar></Navbar>
       
       <Switch>
+      <Route exact path="/Cart">
+          <Cart></Cart>
+        </Route>
         <Route exact path="/">
         <Tabs></Tabs>
             <Main></Main>
@@ -24,24 +32,11 @@ function App() {
         <Tabs></Tabs>
         <Shopping></Shopping>
         </Route>
-        {/* <Route exact path="/:tshirts">
-        <Tabs></Tabs>
-            <Tshirts></Tshirts>
-        </Route>
-        <Route exact path="/:pants">
-        <Tabs></Tabs>
-          <Pants></Pants>
-        </Route>
-        <Route exact path="/:watchs">
-        <Tabs></Tabs>
-          <Watch></Watch>
-        </Route>
-        <Route exact path="/:glasses">
-        <Tabs></Tabs>
-          <Glasses></Glasses>
-        </Route> */}
         <Route exact path="/:product/:id">
           <Product></Product>
+        </Route>
+        <Route exact path="/Cart">
+          <Cart></Cart>
         </Route>
       </Switch>
     </div>
