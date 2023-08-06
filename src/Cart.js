@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import img from './/imgs/S2.png'
 import {RiDeleteBin6Line} from 'react-icons/ri'
+import useFetch from './useFetch';
 
 
 const Cart = () => {
@@ -21,6 +22,8 @@ const Cart = () => {
           }
         });
       }
+
+      const {data,isPending,error} = useFetch('http://localhost:8000/cart')
 
     return ( <div className="shop">
     <div className="cart">
