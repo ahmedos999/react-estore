@@ -374,7 +374,10 @@ button{
 .shop-2{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* grid-auto-rows: auto; */
+  grid-auto-rows: 50px;
+}
+.shop-2>h2{
+  margin: 20px;
 }
 .cart{
   margin: 20px;

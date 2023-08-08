@@ -32,6 +32,7 @@ const Cart = () => {
 
       {data&&<div className="shop-2">
       <h2>Shopping Cart - 2 items</h2>
+      <div>
         <div className='payment-details'>
             <h2>Order Summary</h2>
             <div className="row"><h6>Subtotal</h6> <h6>$20.00$</h6></div>
@@ -40,7 +41,7 @@ const Cart = () => {
             <div className="row"><h6>Total</h6><h6>20.00$</h6></div>
             <button className='checkout-btn'>Checkout</button>
           </div>
-          </div>}
+          </div></div>}
 
        {data && data.map((data)=>(
          <div className="shop">
