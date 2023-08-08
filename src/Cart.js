@@ -30,6 +30,18 @@ const Cart = () => {
       {isPending && <div>Loading...</div>}
       {error && <div> {error} </div>}
 
+      {data&&<div className="shop">
+      <h2>Shopping Cart - 2 items</h2>
+        <div className='payment-details'>
+            <h2>Order Summary</h2>
+            <div className="row"><h6>Subtotal</h6> <h6>$20.00$</h6></div>
+            <div className="row"><p>Delivery</p><p>Free</p></div>
+            <div className="row"><p>VAT & TAX</p><p>0%</p></div>
+            <div className="row"><h6>Total</h6><h6>20.00$</h6></div>
+            <button className='checkout-btn'>Checkout</button>
+          </div>
+          </div>}
+
        {data && data.map((data)=>(
          <div className="shop">
           <div className="cart">
@@ -61,18 +73,9 @@ const Cart = () => {
       
               </div>
           </div>
-          </div>
-      
-          
+          </div>  
       ))}
-      {data&&<div className="payment-details">
-            <h2>Order Summary</h2>
-            <div className="row"><h6>Subtotal</h6> <h6>$20.00$</h6></div>
-            <div className="row"><p>Delivery</p><p>Free</p></div>
-            <div className="row"><p>VAT & TAX</p><p>0%</p></div>
-            <div className="row"><h6>Total</h6><h6>20.00$</h6></div>
-            <button className='checkout-btn'>Checkout</button>
-          </div>}
+      
     </div>
     );
 }
