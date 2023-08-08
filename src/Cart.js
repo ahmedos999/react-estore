@@ -30,7 +30,7 @@ const Cart = () => {
       {isPending && <div>Loading...</div>}
       {error && <div> {error} </div>}
 
-      {data&&<div className="shop">
+      {data&&<div className="shop-2">
       <h2>Shopping Cart - 2 items</h2>
         <div className='payment-details'>
             <h2>Order Summary</h2>
