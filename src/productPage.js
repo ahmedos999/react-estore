@@ -8,8 +8,20 @@ import useFetch from './useFetch';
 
 const Product = () => {
     var {id,product} = useParams()
-    console.log("the firts name is"+product+id)
-    const {data:shoe,isPending,error} = useFetch('http://localhost:8000/'+product+'/'+id)
+    console.log("the firts name is"+product+id);
+    const {data:shoe,isPending,error} = useFetch('http://localhost:8000/'+product+'/'+id);
+
+    const handleSubmit = (name,description,price,img,id)=>{
+        // e.preventDefault();
+        const newData = {name,description,price,img,id}
+        fetch('http://localhost:8000/cart',{
+            method:'POST',
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(newData)
+        }).then(()=>{
+            console.log('new data added')
+        })
+    }
 
     return (
          <div className="product-page">
@@ -31,7 +43,7 @@ const Product = () => {
             <div className="Total"><h4>Total amount</h4><p>{shoe.price+shoe.price * 15/100}$</p></div>
         </div>
         <div className="btn-container">
-        <button className='buy-2'>Confirm Order</button>
+        <button className='buy-2' onClick={handleSubmit(shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}>Confirm Order</button>
         </div>
         
         </div>}
