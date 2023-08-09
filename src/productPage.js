@@ -11,8 +11,9 @@ const Product = () => {
     console.log("the firts name is"+product+id);
     const {data:shoe,isPending,error} = useFetch('http://localhost:8000/'+product+'/'+id);
 
-    const handleSubmit = (name,description,price,img,id)=>{
+    const handleSubmit = (event,name,description,price,img,id)=>{
         // e.preventDefault();
+        event.preventDefault();
         const newData = {name,description,price,img,id}
         fetch('http://localhost:8000/cart',{
             method:'POST',
@@ -43,7 +44,7 @@ const Product = () => {
             <div className="Total"><h4>Total amount</h4><p>{shoe.price+shoe.price * 15/100}$</p></div>
         </div>
         <div className="btn-container">
-        <button className='buy-2' onClick={handleSubmit(shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}>Confirm Order</button>
+        <button className='buy-2' onClick={(event)=>handleSubmit(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}>Confirm Order</button>
         </div>
         
         </div>}
