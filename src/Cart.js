@@ -25,6 +25,14 @@ const Cart = () => {
 
       const {data,isPending,error} = useFetch('http://localhost:8000/cart')
 
+      const handleDelete = ()=>{
+        fetch('http://localhost:8000/cart/'+id,{
+            method:'DELETE',
+        }).then(()=>{
+            console.log('new data added')
+        })
+      }
+
     return ( <div>
       {/* <h2>Shopping Cart - 2 items</h2> */}
       {isPending && <div>Loading...</div>}
