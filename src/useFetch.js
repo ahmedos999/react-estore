@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 
+
 const useFetch = (endpoint)=>{
 
     const [data,setData] = useState(null)
@@ -38,6 +39,8 @@ const useFetch = (endpoint)=>{
 
 
     },[endpoint])
+
+   
 
     return {data,isPending,err}
 }
