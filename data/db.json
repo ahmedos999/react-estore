@@ -247,13 +247,6 @@
       "price": 44,
       "img": "./imgs/J1.png",
       "id": 11
-    },
-    {
-      "name": "Light Pants",
-      "description": "Good for Running",
-      "price": 38,
-      "img": "./imgs/j4.png",
-      "id": 14
     }
   ]
 }

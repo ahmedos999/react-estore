@@ -25,7 +25,7 @@ const Cart = () => {
 
       const {data,isPending,error} = useFetch('http://localhost:8000/cart')
 
-      const handleDelete = ()=>{
+      const handleDelete = (id)=>{
         fetch('http://localhost:8000/cart/'+id,{
             method:'DELETE',
         }).then(()=>{
@@ -75,7 +75,7 @@ const Cart = () => {
                   </div>
                   <div className='options'>
                   <div>
-                      <RiDeleteBin6Line className='delete-icon'></RiDeleteBin6Line>
+                      <RiDeleteBin6Line className='delete-icon' onClick={()=>handleDelete(data.id)}></RiDeleteBin6Line>
                   </div>
                   <h3>Price - 20.00$</h3>
                   </div>
