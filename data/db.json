@@ -240,13 +240,6 @@
       "price": 20,
       "img": "./imgs/g4.png",
       "id": 18
-    },
-    {
-      "name": "Max Pants",
-      "description": "high Quailty Pants",
-      "price": 44,
-      "img": "./imgs/J1.png",
-      "id": 11
     }
   ]
 }

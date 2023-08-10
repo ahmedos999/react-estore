@@ -29,7 +29,7 @@ const Cart = () => {
         fetch('http://localhost:8000/cart/'+id,{
             method:'DELETE',
         }).then(()=>{
-            console.log('new data added')
+          window.location.reload(false);// hope to change this to state for a better exprineace but still works
         })
       }
 
