@@ -6,6 +6,7 @@ import useFetch from './useFetch';
 
 const Cart = () => {
     const [counter,setCounter] = useState(1);
+    const [cartinfo,setCartInfo] = useState(0)
     function increment() {
         //setCount(prevCount => prevCount+=1);
         setCounter(function (prevCount) {
@@ -25,6 +26,8 @@ const Cart = () => {
 
       const {data,isPending,error} = useFetch('http://localhost:8000/cart')
 
+
+
       const handleDelete = (id)=>{
         fetch('http://localhost:8000/cart/'+id,{
             method:'DELETE',
@@ -33,13 +36,22 @@ const Cart = () => {
         })
       }
 
+      // const getdetails = (arr)=>{
+      //   var itemCount = 0
+      //   for(let i=0;i<arr.length;i++){
+      //     itemCount++
+      // }
+      //   setCartInfo(itemCount)
+      // }
+
     return ( <div>
       {/* <h2>Shopping Cart - 2 items</h2> */}
       {isPending && <div>Loading...</div>}
       {error && <div> {error} </div>}
 
-      {data&&<div className="shop-2">
-      <h2>Shopping Cart - 2 items</h2>
+      {data &&
+      <div className="shop-2">
+      <h2>Shopping Cart - {cartinfo} items</h2>
       <div>
         <div className='payment-details'>
             <h2>Order Summary</h2>

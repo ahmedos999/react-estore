@@ -186,60 +186,11 @@
   ],
   "cart": [
     {
-      "name": "Blue Nike",
-      "description": "Running shoes",
-      "price": 20,
-      "img": "./imgs/S1.png",
-      "id": 1
-    },
-    {
       "name": "R&B Nike",
       "description": "Good for Outfits",
       "price": 28,
       "img": "./imgs/S2.png",
       "id": 2
-    },
-    {
-      "name": "Sport adidas",
-      "description": "Good for running",
-      "price": 25,
-      "img": "./imgs/S4.png",
-      "id": 4
-    },
-    {
-      "name": "Black T-Shirt",
-      "description": "Fittness Shirt",
-      "price": 28,
-      "img": "./imgs/t4.png",
-      "id": 8
-    },
-    {
-      "name": "White T-Shirt",
-      "description": "high Quailty T-shirt",
-      "price": 22,
-      "img": "./imgs/t2.png",
-      "id": 6
-    },
-    {
-      "name": "Georg watch",
-      "description": "high Quailty watch",
-      "price": 60,
-      "img": "./imgs/w1.png",
-      "id": 16
-    },
-    {
-      "name": "Casual Watch",
-      "description": "Good for Showing off",
-      "price": 40,
-      "img": "./imgs/w4.png",
-      "id": 19
-    },
-    {
-      "name": "Read Glasses",
-      "description": "good for books",
-      "price": 20,
-      "img": "./imgs/g4.png",
-      "id": 18
     }
   ]
 }
