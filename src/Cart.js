@@ -93,7 +93,7 @@ const Cart = () => {
 
       {data &&
       <div className="shop-2">
-      <h2>Shopping Cart - {data.lenght} items</h2>
+      <h2>Shopping Cart - {data.length} items</h2>
       <div>
         <div className='payment-details'>
             <h2>Order Summary</h2>
