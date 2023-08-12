@@ -1,12 +1,13 @@
-import { useState } from 'react';
+import { useState,useEffect } from "react";
 // import img from './/imgs/S2.png'
 import {RiDeleteBin6Line} from 'react-icons/ri'
-import useFetch from './useFetch';
+// import useFetch from './useFetch';
+
 
 
 const Cart = () => {
     const [counter,setCounter] = useState(1);
-    const [cartinfo,setCartInfo] = useState(0)
+    // const [cartinfo,setCartInfo] = useState(0)
     function increment() {
         //setCount(prevCount => prevCount+=1);
         setCounter(function (prevCount) {
@@ -24,16 +25,56 @@ const Cart = () => {
         });
       }
 
-      const {data,isPending,error} = useFetch('http://localhost:8000/cart')
+      // const {data,isPending,error} = useFetch('http://localhost:8000/cart')
+
+    const [data,setData] = useState(null)
+    const [isPending,setIsPending] = useState(true)
+    const [error,setErr] = useState(null)
+
+    useEffect(()=>{
+        const abortCont = new AbortController();
+
+
+        setTimeout(()=>{
+        fetch('http://localhost:8000/cart',{signal:abortCont.signal})
+        .then(res =>{
+            
+        if(!res.ok){
+            throw Error('Could not find the data');
+            
+        }
+            return res.json();
+            
+        }).then(data => {
+            setData(data)
+            setIsPending(false)
+            setErr(null)
+        }).catch(e=>{
+            if(e.name !=='AbortError'){
+            setErr(e.message)
+            setIsPending(false)
+            }else{
+                console.log('Error aborted')
+            }
+
+        })
+        },1000);
+        return () => abortCont.abort();
+
+
+    },[])
 
 
 
       const handleDelete = (id)=>{
-        fetch('http://localhost:8000/cart/'+id,{
-            method:'DELETE',
-        }).then(()=>{
-          window.location.reload(false);// hope to change this to state for a better exprineace but still works
-        })
+
+        const newCart = data.filter(data=>data.id!==id);
+        setData(newCart)
+        // fetch('http://localhost:8000/cart/'+id,{
+        //     method:'DELETE',
+        // }).then(()=>{
+        //   window.location.reload(false);// hope to change this to state for a better exprineace but still works
+        // })
       }
 
       // const getdetails = (arr)=>{
@@ -51,7 +92,7 @@ const Cart = () => {
 
       {data &&
       <div className="shop-2">
-      <h2>Shopping Cart - {cartinfo} items</h2>
+      <h2>Shopping Cart - 0 items</h2>
       <div>
         <div className='payment-details'>
             <h2>Order Summary</h2>
