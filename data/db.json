@@ -191,13 +191,6 @@
       "price": 28,
       "img": "./imgs/S2.png",
       "id": 2
-    },
-    {
-      "name": "Blue Nike",
-      "description": "Running shoes",
-      "price": 20,
-      "img": "./imgs/S1.png",
-      "id": 1
     }
   ]
 }

@@ -63,17 +63,18 @@ const Cart = () => {
 
 
     },[])
-
-
+    
 
       const handleDelete = (id)=>{
 
         const newCart = data.filter(data=>data.id!==id);
         setData(newCart)
-        // fetch('http://localhost:8000/cart/'+id,{
-        //     method:'DELETE',
-        // }).then(()=>{
-        //   window.location.reload(false);// hope to change this to state for a better exprineace but still works
+        fetch('http://localhost:8000/cart/'+id,{
+            method:'DELETE',
+        })
+        // .then(()=>{
+        //   // window.location.reload(false);
+        //   // hope to change this to state for a better exprineace but still works
         // })
       }
 
@@ -92,7 +93,7 @@ const Cart = () => {
 
       {data &&
       <div className="shop-2">
-      <h2>Shopping Cart - 0 items</h2>
+      <h2>Shopping Cart - {data.lenght} items</h2>
       <div>
         <div className='payment-details'>
             <h2>Order Summary</h2>
