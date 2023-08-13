@@ -63,6 +63,15 @@ const Cart = () => {
 
 
     },[])
+
+
+      const getTotal = (data)=>{
+        var total = 0;
+        data.map((data)=>{
+          total+=data.price
+        })
+        return total
+      }
     
 
       const handleDelete = (id)=>{
@@ -97,10 +106,10 @@ const Cart = () => {
       <div>
         <div className='payment-details'>
             <h2>Order Summary</h2>
-            <div className="row"><h6>Subtotal</h6> <h6>$20.00$</h6></div>
+            <div className="row"><h6>Subtotal</h6> <h6>{getTotal(data)}$</h6></div>
             <div className="row"><p>Delivery</p><p>Free</p></div>
-            <div className="row"><p>VAT & TAX</p><p>0%</p></div>
-            <div className="row"><h6>Total</h6><h6>20.00$</h6></div>
+            <div className="row"><p>VAT & TAX</p><p>{Number(getTotal(data)*0.15).toFixed(2)}$</p></div>
+            <div className="row"><h6>Total</h6><h6>{Number(getTotal(data)+getTotal(data)*0.15).toFixed(2)}$</h6></div>
             <button className='checkout-btn'>Checkout</button>
           </div>
           </div></div>}
@@ -131,7 +140,7 @@ const Cart = () => {
                   <div>
                       <RiDeleteBin6Line className='delete-icon' onClick={()=>handleDelete(data.id)}></RiDeleteBin6Line>
                   </div>
-                  <h3>Price - 20.00$</h3>
+                  <h3>Price : {data.price}$</h3>
                   </div>
       
               </div>
