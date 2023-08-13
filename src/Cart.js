@@ -65,11 +65,11 @@ const Cart = () => {
     },[])
 
 
-      const getTotal = (data)=>{
+      function getTotal(data){
         var total = 0;
-        data.map((data)=>{
-          total+=data.price
-        })
+        for(let i=0;i<data.length;i++){
+          total+=data[i].price
+        }
         return total
       }
     
