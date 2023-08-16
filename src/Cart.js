@@ -2,12 +2,14 @@ import { useState,useEffect } from "react";
 // import img from './/imgs/S2.png'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 // import useFetch from './useFetch';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
 const Cart = () => {
     const [counter,setCounter] = useState(1);
     // const [cartinfo,setCartInfo] = useState(0)
+    const notify = () => toast.error('Item has been Removed');
     function increment() {
         //setCount(prevCount => prevCount+=1);
         setCounter(function (prevCount) {
@@ -81,10 +83,11 @@ const Cart = () => {
         fetch('http://localhost:8000/cart/'+id,{
             method:'DELETE',
         })
-        // .then(()=>{
-        //   // window.location.reload(false);
-        //   // hope to change this to state for a better exprineace but still works
-        // })
+        .then(()=>{
+          // window.location.reload(false);
+          // hope to change this to state for a better exprineace but still works
+          notify()
+        })
       }
 
       // const getdetails = (arr)=>{
@@ -147,7 +150,7 @@ const Cart = () => {
           </div>
           </div>  
       ))}
-      
+      <Toaster />
     </div>
     );
 }

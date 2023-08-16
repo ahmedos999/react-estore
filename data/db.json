@@ -205,13 +205,6 @@
       "price": 22,
       "img": "./imgs/t2.png",
       "id": 6
-    },
-    {
-      "name": "Georg watch",
-      "description": "high Quailty watch",
-      "price": 60,
-      "img": "./imgs/w1.png",
-      "id": 16
     }
   ]
 }
