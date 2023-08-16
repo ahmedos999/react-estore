@@ -198,6 +198,20 @@
       "price": 20,
       "img": "./imgs/S1.png",
       "id": 1
+    },
+    {
+      "name": "White T-Shirt",
+      "description": "high Quailty T-shirt",
+      "price": 22,
+      "img": "./imgs/t2.png",
+      "id": 6
+    },
+    {
+      "name": "Georg watch",
+      "description": "high Quailty watch",
+      "price": 60,
+      "img": "./imgs/w1.png",
+      "id": 16
     }
   ]
 }

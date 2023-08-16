@@ -5,11 +5,14 @@ import {SiNike} from "react-icons/si"
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import {useParams} from 'react-router-dom';
 import useFetch from './useFetch';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Product = () => {
     var {id,product} = useParams()
     console.log("the firts name is"+product+id);
     const {data:shoe,isPending,error} = useFetch('http://localhost:8000/'+product+'/'+id);
+    const notify = () => toast.success('Item has been added Successfully');
 
     const handleSubmit = (event,name,description,price,img,id)=>{
         // e.preventDefault();
@@ -20,7 +23,7 @@ const Product = () => {
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(newData)
         }).then(()=>{
-            console.log('new data added')
+            notify()
         })
     }
 
@@ -46,6 +49,7 @@ const Product = () => {
         <div className="btn-container">
         <button className='buy-2' onClick={(event)=>handleSubmit(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}>Confirm Order</button>
         </div>
+        <Toaster />
         
         </div>}
 
