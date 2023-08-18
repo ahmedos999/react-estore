@@ -4,6 +4,7 @@ import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
 import {Link, useParams} from 'react-router-dom';
 import Tabs from './Tabs';
+import {MdFavoriteBorder} from "react-icons/md"
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
@@ -26,8 +27,8 @@ const Shopping = () => {
             <h4>{shoe.name}</h4>
             <div className="price"><p>{shoe.description}</p> <h6>{shoe.price}$</h6></div>
             <div className="btns">
-                <button className='fav'><BsCartPlus></BsCartPlus>Add To Cart</button>
-                <button className='buy'>Buy Now</button>
+                <button className='fav'><MdFavoriteBorder></MdFavoriteBorder>Add To Favorite</button>
+                <button className='buy'><BsCartPlus></BsCartPlus>Add To Cart</button>
             </div>
         </div></Link>
         ))}
