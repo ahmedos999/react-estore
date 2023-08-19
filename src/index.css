@@ -25,6 +25,25 @@ button{
 ::placeholder {
   padding: 8px;
 }
+.badgenumber{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #d01111;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  /* text-align: center; */
+  top: 0;
+  right: 0;
+}
+.badge-2{
+  position: relative;
+}
 
     /* navbar style end */
 
