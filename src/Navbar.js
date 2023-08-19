@@ -9,8 +9,8 @@ const Navbar = () => {
     <div className="nav">
         <h4>E-Store</h4>
         <div className="icons">
-            <Link to="/Cart"><BiCart className='icon'/></Link>
-            <BsFillPersonFill className='icon'></BsFillPersonFill>
+        <Link to="/Cart"><div className="badge-2"><BiCart className='icon'/><div className="badgenumber">2</div></div></Link>
+        <BsFillPersonFill className='icon'></BsFillPersonFill>
         </div>
     </div> );
 }
