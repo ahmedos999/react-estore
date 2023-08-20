@@ -11,6 +11,7 @@ const Navbar = () => {
         <div className="icons">
         <Link to="/Cart"><div className="badge-2"><BiCart className='icon'/><div className="badgenumber">2</div></div></Link>
         <BsFillPersonFill className='icon'></BsFillPersonFill>
+        <BsFillPersonFill className='icon'></BsFillPersonFill>
         </div>
     </div> );
 }
