@@ -1,6 +1,6 @@
 import {useState,useEffect } from "react";
 import {BsCartPlus} from "react-icons/bs"
-import {MdFavoriteBorder} from "react-icons/md"
+import {MdFavorite} from "react-icons/md"
 
 const Fav = () => {
     const [data,setData] = useState(null)
@@ -40,7 +40,7 @@ const Fav = () => {
 
     },[])
     return ( <div className="maincontent">
-    <h2>Your Favorites</h2>
+    <h2>Your Favorites <MdFavorite></MdFavorite></h2>
     <div className="show">
     {isPending && <div>Loading...</div>}
     {error && <div> {error} </div>}
@@ -51,7 +51,7 @@ const Fav = () => {
         <h4>{data.name}</h4>
         <div className="price"><p>{data.description}</p> <h6>{data.price}$</h6></div>
         <div className="btns">
-            <button className='fav'><MdFavoriteBorder></MdFavoriteBorder>Add To Favorite</button>
+            <button className='fav'><MdFavorite></MdFavorite>Remove Favorite</button>
             <button className='buy'><BsCartPlus></BsCartPlus>Add To Cart</button>
         </div>
     </div>
