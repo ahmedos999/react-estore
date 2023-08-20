@@ -9,6 +9,7 @@ import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Product from './productPage';
 import Shopping from './Shopping';
 import Cart from './Cart';
+import Fav from './Fav';
 
  
 
@@ -34,6 +35,10 @@ function App() {
         <Route  path="/Cart" element={<Cart></Cart>}>
           
         </Route>
+        <Route  path="/Favorite" element={<Fav></Fav>}>
+          
+        </Route>
+        
       </Routes>
     </div>
     </Router>

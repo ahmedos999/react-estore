@@ -228,6 +228,20 @@
       "price": 120,
       "img": "./imgs/w2.png",
       "id": 17
+    },
+    {
+      "name": "Casual Watch",
+      "description": "Good for Showing off",
+      "price": 40,
+      "img": "./imgs/w4.png",
+      "id": 19
+    },
+    {
+      "name": "Sport adidas",
+      "description": "Good for running",
+      "price": 25,
+      "img": "./imgs/S4.png",
+      "id": 4
     }
   ]
 }
