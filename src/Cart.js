@@ -1,15 +1,16 @@
-import { useState,useEffect } from "react";
+import { useState} from "react";
 // import img from './/imgs/S2.png'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 // import useFetch from './useFetch';
-import toast, { Toaster } from 'react-hot-toast';
+// import toast, { Toaster } from 'react-hot-toast';
 
 
 
-const Cart = () => {
+const Cart = ({data,isPending,error,getTotal,handleDelete}) => {
+  // console.log(getTotal)
     const [counter,setCounter] = useState(1);
     // const [cartinfo,setCartInfo] = useState(0)
-    const notify = () => toast.error('Item has been Removed');
+    // const notify = () => toast.error('Item has been Removed');
     function increment() {
         //setCount(prevCount => prevCount+=1);
         setCounter(function (prevCount) {
@@ -29,66 +30,66 @@ const Cart = () => {
 
       // const {data,isPending,error} = useFetch('http://localhost:8000/cart')
 
-    const [data,setData] = useState(null)
-    const [isPending,setIsPending] = useState(true)
-    const [error,setErr] = useState(null)
+    // const [data,setData] = useState(null)
+    // const [isPending,setIsPending] = useState(true)
+    // const [error,setErr] = useState(null)
 
-    useEffect(()=>{
-        const abortCont = new AbortController();
+    // useEffect(()=>{
+    //     const abortCont = new AbortController();
 
 
-        setTimeout(()=>{
-        fetch('http://localhost:8000/cart',{signal:abortCont.signal})
-        .then(res =>{
+    //     setTimeout(()=>{
+    //     fetch('http://localhost:8000/cart',{signal:abortCont.signal})
+    //     .then(res =>{
             
-        if(!res.ok){
-            throw Error('Could not find the data');
+    //     if(!res.ok){
+    //         throw Error('Could not find the data');
             
-        }
-            return res.json();
+    //     }
+    //         return res.json();
             
-        }).then(data => {
-            setData(data)
-            setIsPending(false)
-            setErr(null)
-        }).catch(e=>{
-            if(e.name !=='AbortError'){
-            setErr(e.message)
-            setIsPending(false)
-            }else{
-                console.log('Error aborted')
-            }
+    //     }).then(data => {
+    //         setData(data)
+    //         setIsPending(false)
+    //         setErr(null)
+    //     }).catch(e=>{
+    //         if(e.name !=='AbortError'){
+    //         setErr(e.message)
+    //         setIsPending(false)
+    //         }else{
+    //             console.log('Error aborted')
+    //         }
 
-        })
-        },1000);
-        return () => abortCont.abort();
-
-
-    },[])
+    //     })
+    //     },1000);
+    //     return () => abortCont.abort();
 
 
-      function getTotal(data){
-        var total = 0;
-        for(let i=0;i<data.length;i++){
-          total+=data[i].price
-        }
-        return total
-      }
+    // },[])
+
+
+    //   function getTotal(data){
+    //     var total = 0;
+    //     for(let i=0;i<data.length;i++){
+    //       total+=data[i].price
+    //     }
+    //     return total
+    //   }
     
 
-      const handleDelete = (id)=>{
+    //   const handleDelete = (id)=>{
 
-        const newCart = data.filter(data=>data.id!==id);
-        setData(newCart)
-        fetch('http://localhost:8000/cart/'+id,{
-            method:'DELETE',
-        })
-        .then(()=>{
-          // window.location.reload(false);
-          // hope to change this to state for a better exprineace but still works
-          notify()
-        })
-      }
+    //     const newCart = data.filter(data=>data.id!==id);
+    //     setData(newCart)
+    //     fetch('http://localhost:8000/cart/'+id,{
+    //         method:'DELETE',
+    //     })
+    //     .then(()=>{
+    //       // window.location.reload(false);
+    //       // hope to change this to state for a better exprineace but still works
+    //       notify()
+    //     })
+    //   }
 
       // const getdetails = (arr)=>{
       //   var itemCount = 0
@@ -150,7 +151,7 @@ const Cart = () => {
           </div>
           </div>  
       ))}
-      <Toaster />
+      {/* <Toaster /> */}
     </div>
     );
 }
