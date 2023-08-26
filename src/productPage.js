@@ -5,7 +5,7 @@ import {SiNike} from "react-icons/si"
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import {useParams} from 'react-router-dom';
 import useFetch from './useFetch';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 
 const Product = (props) => {

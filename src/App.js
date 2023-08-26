@@ -36,6 +36,7 @@ function App() {
     })
   }
   const getTotal = (data) =>{
+    console.log(data)
     var total = 0;
     for(let i=0;i<data.length;i++){
       total+=data[i].price
@@ -91,10 +92,11 @@ const addItem = (event,name,description,price,img,id)=>{
       notify()
   })
 }
+
   return (
     <Router>
       <div className="App">
-      <Navbar></Navbar>
+      <Navbar data={data}></Navbar>
       
       <Routes>
         <Route path="/" element={
