@@ -83,6 +83,7 @@ const addItem = (event,name,description,price,img,id)=>{
   event.preventDefault();
   const newData = {name,description,price,img,id}
   data.push(newData)
+
   setData(data)
   fetch('http://localhost:8000/cart',{
       method:'POST',

@@ -8,7 +8,7 @@ import {MdFavoriteBorder} from "react-icons/md"
 
 
 const Navbar = (data) => {
-    console.log(data.data)
+    console.log(data)
     return ( 
     
     <div className="nav">
