@@ -8,24 +8,25 @@ import useFetch from './useFetch';
 import toast, { Toaster } from 'react-hot-toast';
 
 
-const Product = () => {
+const Product = (props) => {
     var {id,product} = useParams()
     console.log("the firts name is"+product+id);
     const {data:shoe,isPending,error} = useFetch('http://localhost:8000/'+product+'/'+id);
-    const notify = () => toast.success('Item has been added Successfully');
+    // console.log(addItem)
+    
 
-    const handleSubmit = (event,name,description,price,img,id)=>{
-        // e.preventDefault();
-        event.preventDefault();
-        const newData = {name,description,price,img,id}
-        fetch('http://localhost:8000/cart',{
-            method:'POST',
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify(newData)
-        }).then(()=>{
-            notify()
-        })
-    }
+    // const handleSubmit = (event,name,description,price,img,id)=>{
+    //     // e.preventDefault();
+    //     event.preventDefault();
+    //     const newData = {name,description,price,img,id}
+    //     fetch('http://localhost:8000/cart',{
+    //         method:'POST',
+    //         headers:{"Content-Type":"application/json"},
+    //         body:JSON.stringify(newData)
+    //     }).then(()=>{
+    //         notify()
+    //     })
+    // }
 
     return (
          <div className="product-page">
@@ -47,7 +48,7 @@ const Product = () => {
             <div className="Total"><h4>Total amount</h4><p>{shoe.price+shoe.price * 15/100}$</p></div>
         </div>
         <div className="btn-container">
-        <button className='buy-2' onClick={(event)=>handleSubmit(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}>Confirm Order</button>
+        <button className='buy-2' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}>Confirm Order</button>
         </div>
         <Toaster />
         

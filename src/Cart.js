@@ -98,6 +98,7 @@ const Cart = ({data,isPending,error,getTotal,handleDelete}) => {
       // }
       //   setCartInfo(itemCount)
       // }
+      
 
     return ( <div>
       {/* <h2>Shopping Cart - 2 items</h2> */}

@@ -11,6 +11,7 @@ import Shopping from './Shopping';
 import Cart from './Cart';
 import Fav from './Fav';
 import { useState,useEffect } from "react";
+import toast from 'react-hot-toast';
  
 
 
@@ -20,6 +21,7 @@ function App() {
   const [data,setData] = useState(null)
   const [isPending,setIsPending] = useState(true)
   const [error,setErr] = useState(null)
+  const notify = () => toast.success('Item has been added Successfully');
 
   const handleDelete = (id)=>{
 
@@ -74,6 +76,21 @@ function App() {
 
 },[])
   
+
+const addItem = (event,name,description,price,img,id)=>{
+  // e.preventDefault();
+  event.preventDefault();
+  const newData = {name,description,price,img,id}
+  data.push(newData)
+  setData(data)
+  fetch('http://localhost:8000/cart',{
+      method:'POST',
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(newData)
+  }).then(()=>{
+      notify()
+  })
+}
   return (
     <Router>
       <div className="App">
@@ -87,7 +104,7 @@ function App() {
         <Route  path="/:name" element={<Shopping></Shopping>}>
         
         </Route>
-        <Route  path="/:product/:id" element={<Product></Product>}>
+        <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
           
         </Route>
         <Route  path="/Cart" element={<Cart data={data}isPending={isPending}error={error} getTotal={getTotal}handleDelete = {handleDelete}></Cart>}>
