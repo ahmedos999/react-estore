@@ -191,20 +191,6 @@
       "price": 28,
       "img": "./imgs/S2.png",
       "id": 2
-    },
-    {
-      "name": "Show Glasses",
-      "description": "Good for Daylight",
-      "price": 20,
-      "img": "./imgs/g7.png",
-      "id": 19
-    },
-    {
-      "name": "Heavy Pants",
-      "description": "Show Pants",
-      "price": 40,
-      "img": "./imgs/j3.png",
-      "id": 13
     }
   ],
   "fav": [

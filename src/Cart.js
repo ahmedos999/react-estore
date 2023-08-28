@@ -3,6 +3,7 @@ import { useState} from "react";
 import {RiDeleteBin6Line} from 'react-icons/ri'
 // import useFetch from './useFetch';
 // import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 
 
@@ -152,7 +153,7 @@ const Cart = ({data,isPending,error,getTotal,handleDelete}) => {
           </div>
           </div>  
       ))}
-      {/* <Toaster /> */}
+      <Toaster />
     </div>
     );
 }

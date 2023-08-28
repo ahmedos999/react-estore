@@ -22,15 +22,18 @@ function App() {
   const [isPending,setIsPending] = useState(true)
   const [error,setErr] = useState(null)
   const notify = () => toast.success('Item has been added Successfully');
+  const notifyDelete = () => toast.error('Item has been Deleted');
 
   const handleDelete = (id)=>{
 
     const newCart = data.filter(data=>data.id!==id);
+    notifyDelete()
     setData(newCart)
     fetch('http://localhost:8000/cart/'+id,{
         method:'DELETE',
     })
     .then(()=>{
+      
       // window.location.reload(false);
       // hope to change this to state for a better exprineace but still works
     })
