@@ -3,6 +3,7 @@
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
 import {Link, useParams} from 'react-router-dom';
+import Tabs from './Tabs';
 import {MdFavoriteBorder} from "react-icons/md"
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -13,6 +14,7 @@ const Shopping = () => {
     const {data:shoes,isPending,error} = useFetch('http://localhost:8000/'+name)
 
     return ( <div>
+        {/* <Tabs curr={'Shoes'}></Tabs> */}
         <div className="maincontent">
         <h2>Explore our Lastest Products</h2>
         <div className="show">

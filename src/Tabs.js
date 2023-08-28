@@ -2,9 +2,11 @@ import {Link} from 'react-router-dom';
 
 const Tabs = () => {
 //   const [isActive, setIsActive] = useState(false);
+//lis[i].childNodes.item(0).nodeValue
 
   const handleClick = event => {
     // 👇️ toggle isActive state on click
+    
     const lis = document.getElementsByTagName('li');
     for(let i=0;i<lis.length;i++){
         lis[i].classList.remove("active")

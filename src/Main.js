@@ -27,7 +27,7 @@ const Main = () => {
     // const {data:shoes,isPending,error} = useFetch('http://localhost:8000/'+name)
 
     return ( <div>
-      <Tabs></Tabs>
+      {/* <Tabs></Tabs> */}
       <div className="maincontent-2">
         <div className="intro">
             <FaShopify className='into-icon'></FaShopify>

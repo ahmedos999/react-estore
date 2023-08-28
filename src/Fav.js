@@ -9,8 +9,6 @@ const Fav = () => {
 
     useEffect(()=>{
         const abortCont = new AbortController();
-
-
         setTimeout(()=>{
         fetch('http://localhost:8000/fav',{signal:abortCont.signal})
         .then(res =>{

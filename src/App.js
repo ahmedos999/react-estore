@@ -21,6 +21,7 @@ function App() {
   const [data,setData] = useState(null)
   const [isPending,setIsPending] = useState(true)
   const [error,setErr] = useState(null)
+  const [curr,setCurr] = useState(null)
   const notify = () => toast.success('Item has been added Successfully');
   const notifyDelete = () => toast.error('Item has been Deleted');
   const notifyalready = () => toast('item already in Cart', {
@@ -61,7 +62,10 @@ function App() {
 
 
 },[])
-  
+
+const changeTab = (name)=>{
+  setCurr(name)
+}
 
 const addItem = (event,name,description,price,img,id)=>{
   const newData = {name,description,price,img,id}
@@ -125,12 +129,10 @@ const getTotal = (data) =>{
       
       <Routes>
         <Route path="/" element={
-            <Main/>}>
+            <><Tabs curr={curr} changeTab={changeTab}></Tabs><Main/></>}>
   
         </Route>
-        <Route  path="/:name" element={
-        
-        <><Tabs/> <Shopping/></>}>
+        <Route  path="/:name" element={<><Tabs curr={curr} changeTab={changeTab} ></Tabs><Shopping></Shopping></>}>
         
         </Route>
         <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
