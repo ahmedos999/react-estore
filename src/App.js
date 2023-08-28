@@ -23,6 +23,9 @@ function App() {
   const [error,setErr] = useState(null)
   const notify = () => toast.success('Item has been added Successfully');
   const notifyDelete = () => toast.error('Item has been Deleted');
+  const notifyalready = () => toast('item already in Cart', {
+    icon: '⚠️',
+  });
 
   
 
@@ -61,8 +64,18 @@ function App() {
   
 
 const addItem = (event,name,description,price,img,id)=>{
-  //  event.preventDefault();
   const newData = {name,description,price,img,id}
+  var flag = true;
+  for(let i=0;i<data.length;i++){
+    if(data[i].id===id){
+      flag = false;
+    }
+  }
+  console.log(flag)
+  if(flag){
+    console.log(data.data)
+    //  event.preventDefault();
+  
   // data.push(newData)
   
   // const newdata = data
@@ -78,6 +91,9 @@ const addItem = (event,name,description,price,img,id)=>{
     
       notify()
   })
+  }else{
+    notifyalready()
+  }
 }
 const handleDelete = (id)=>{
 

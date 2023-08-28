@@ -193,18 +193,25 @@
       "id": 2
     },
     {
-      "name": "Black Glasses",
-      "description": "Match every outfit",
+      "name": "Sun Glasses",
+      "description": "high Quailty Glasses",
       "price": 20,
-      "img": "./imgs/g5.png",
-      "id": 17
+      "img": "./imgs/g6.png",
+      "id": 16
     },
     {
-      "name": "Show Glasses",
-      "description": "Good for Daylight",
-      "price": 20,
-      "img": "./imgs/g7.png",
+      "name": "Casual Watch",
+      "description": "Good for Showing off",
+      "price": 40,
+      "img": "./imgs/w4.png",
       "id": 19
+    },
+    {
+      "name": "Black Shoes",
+      "description": "Good for suits",
+      "price": 35,
+      "img": "./imgs/S3.png",
+      "id": 3
     }
   ],
   "fav": [
