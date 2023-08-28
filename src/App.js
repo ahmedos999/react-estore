@@ -24,28 +24,7 @@ function App() {
   const notify = () => toast.success('Item has been added Successfully');
   const notifyDelete = () => toast.error('Item has been Deleted');
 
-  const handleDelete = (id)=>{
-
-    const newCart = data.filter(data=>data.id!==id);
-    notifyDelete()
-    setData(newCart)
-    fetch('http://localhost:8000/cart/'+id,{
-        method:'DELETE',
-    })
-    .then(()=>{
-      
-      // window.location.reload(false);
-      // hope to change this to state for a better exprineace but still works
-    })
-  }
-  const getTotal = (data) =>{
-    console.log(data)
-    var total = 0;
-    for(let i=0;i<data.length;i++){
-      total+=data[i].price
-    }
-    return total
-  }
+  
 
   useEffect(()=>{
     const abortCont = new AbortController();
@@ -82,19 +61,45 @@ function App() {
   
 
 const addItem = (event,name,description,price,img,id)=>{
-  // e.preventDefault();
-  event.preventDefault();
+  //  event.preventDefault();
   const newData = {name,description,price,img,id}
-  data.push(newData)
+  // data.push(newData)
+  
+  // const newdata = data
+  console.log(data)
+  setData(prevState => [...prevState, newData])
+  console.log(data)
 
-  setData(data)
   fetch('http://localhost:8000/cart',{
       method:'POST',
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(newData)
   }).then(()=>{
+    
       notify()
   })
+}
+const handleDelete = (id)=>{
+
+  const newCart = data.filter(data=>data.id!==id);
+  notifyDelete()
+  setData(newCart)
+  fetch('http://localhost:8000/cart/'+id,{
+      method:'DELETE',
+  })
+  .then(()=>{
+    
+    // window.location.reload(false);
+    // hope to change this to state for a better exprineace but still works
+  })
+}
+const getTotal = (data) =>{
+  console.log(data)
+  var total = 0;
+  for(let i=0;i<data.length;i++){
+    total+=data[i].price
+  }
+  return total
 }
 
   return (
