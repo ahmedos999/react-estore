@@ -10,7 +10,6 @@ import {MdFavoriteBorder} from "react-icons/md"
 const Navbar = (data) => {
     console.log(data)
     return ( 
-    
     <div className="nav">
         <h4>E-Store</h4>
         <div className="icons">

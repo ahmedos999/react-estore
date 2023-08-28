@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 import Main from './Main';
-// import Tabs from './Tabs';
+import Tabs from './Tabs';
 // import Tshirts from './t-shirts';
 // import Watch from './watchs';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
@@ -128,7 +128,9 @@ const getTotal = (data) =>{
             <Main/>}>
   
         </Route>
-        <Route  path="/:name" element={<Shopping></Shopping>}>
+        <Route  path="/:name" element={
+        
+        <><Tabs/> <Shopping/></>}>
         
         </Route>
         <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
