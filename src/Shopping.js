@@ -3,7 +3,7 @@
 import useFetch from './useFetch';
 import {BsCartPlus} from "react-icons/bs"
 import {Link, useParams} from 'react-router-dom';
-import Tabs from './Tabs';
+// import Tabs from './Tabs';
 import {MdFavoriteBorder} from "react-icons/md"
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 

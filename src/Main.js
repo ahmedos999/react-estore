@@ -4,7 +4,7 @@ import img3 from './/imgs/J1.png'
 import img4 from './/imgs/w1.png'
 import img5 from './/imgs/g5.png'
 import { FaShopify } from "react-icons/fa";
-import Tabs from './Tabs';
+// import Tabs from './Tabs';
 // import useFetch from './useFetch';
 
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
