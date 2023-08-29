@@ -3,7 +3,7 @@ import { BiCart } from 'react-icons/bi';
 import { BsFillPersonFill } from 'react-icons/bs';
 import {Link} from 'react-router-dom';
 import {MdFavoriteBorder} from "react-icons/md"
-// import useFetch from './useFetch';
+
 
 
 
