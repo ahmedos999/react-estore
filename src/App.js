@@ -12,6 +12,7 @@ import Cart from './Cart';
 import Fav from './Fav';
 import { useState,useEffect } from "react";
 import toast from 'react-hot-toast';
+import PDF from './pdf';
  
 
 
@@ -144,7 +145,9 @@ const getTotal = (data) =>{
         <Route  path="/Favorite" element={<Fav></Fav>}>
           
         </Route>
-        
+        <Route  path="/Cart/pdf" element={<PDF data={data}isPending={isPending}error={error} getTotal={getTotal}></PDF>}>
+          
+        </Route>
       </Routes>
     </div>
     </Router>

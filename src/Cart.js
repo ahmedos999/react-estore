@@ -4,6 +4,7 @@ import {RiDeleteBin6Line} from 'react-icons/ri'
 // import useFetch from './useFetch';
 // import toast, { Toaster } from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
+import { Link } from "react-router-dom";
 
 
 
@@ -116,7 +117,7 @@ const Cart = ({data,isPending,error,getTotal,handleDelete}) => {
             <div className="row"><p>Delivery</p><p>Free</p></div>
             <div className="row"><p>VAT & TAX</p><p>{Number(getTotal(data)*0.15).toFixed(2)}$</p></div>
             <div className="row"><h6>Total</h6><h6>{Number(getTotal(data)+getTotal(data)*0.15).toFixed(2)}$</h6></div>
-            <button className='checkout-btn'>Checkout</button>
+            <Link to="pdf"><button className='checkout-btn'>Checkout</button></Link>
           </div>
           </div></div>}
 
