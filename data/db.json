@@ -198,20 +198,6 @@
       "price": 20,
       "img": "./imgs/g6.png",
       "id": 16
-    },
-    {
-      "name": "Casual Watch",
-      "description": "Good for Showing off",
-      "price": 40,
-      "img": "./imgs/w4.png",
-      "id": 19
-    },
-    {
-      "name": "Black Shoes",
-      "description": "Good for suits",
-      "price": 35,
-      "img": "./imgs/S3.png",
-      "id": 3
     }
   ],
   "fav": [

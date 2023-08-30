@@ -29,8 +29,8 @@ var datetime =  currentdate.getDate() + "/"
           color: "black",
         },
         section: {
-          margin: 10,
-          padding: 10,
+          margin: 8,
+          padding: 8,
         },
         logo:{
             width:60,
@@ -39,16 +39,26 @@ var datetime =  currentdate.getDate() + "/"
         },
         date: {
             flexDirection: 'row',
-            padding: 10,
+            padding: 8,
             color:"gray",
           },
         row: {
             flexDirection: 'row',
-            padding: 10,
+            padding: 8,
             justifyContent:"space-between"
+          },
+          itemRow:{
+            flexDirection: 'row',
+            padding: 8,
+            justifyContent:"space-between",
+            borderBottom:"1px solid gray",
           },
         details: {
             fontSize: 10,
+          },
+          Itemdetails:{
+            fontSize:8,
+            color:"gray",
           },
           dateDetails: {
             fontSize: 8,
@@ -58,7 +68,7 @@ var datetime =  currentdate.getDate() + "/"
           height: window.innerHeight,
         },
         title: {
-            fontSize: 16,
+            fontSize: 14,
             textAlign: "center",
             fontStyle: 'bold',
             // fontFamily: "Poppins",
@@ -67,7 +77,7 @@ var datetime =  currentdate.getDate() + "/"
             borderTop:"1px solid gray",
             fontSize: 8,
             textAlign: "center",
-            padding:10,
+            padding:8,
             // fontFamily: "Poppins",
           },
           footer2: {
@@ -95,6 +105,16 @@ var datetime =  currentdate.getDate() + "/"
               <Text style={styles.dateDetails}>Date:</Text>
               <Text style={styles.dateDetails}>{datetime}</Text>
             </View>
+            <View style={styles.itemRow}>
+              <Text style={styles.details}>No of items:</Text>
+              <Text style={styles.details}>{data.length}</Text>
+            </View>
+            {data.map((data)=>(
+                <View style={styles.row}>
+                <Text style={styles.Itemdetails}>{data.name}</Text>
+                <Text style={styles.Itemdetails}>{data.price}$</Text>
+              </View>
+      ))}
             <View style={styles.row}>
               <Text style={styles.details}>SubTotal</Text>
               <Text style={styles.details}>{Number(getTotal(data)).toFixed(2)}$</Text>
