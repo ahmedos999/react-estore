@@ -22,6 +22,9 @@ function App() {
   const [data,setData] = useState(null)
   const [isPending,setIsPending] = useState(true)
   const [error,setErr] = useState(null)
+  const [Favdata,setFavdata] = useState(null)
+  const [FavisPending,setFavisPending] = useState(true)
+  const [Faverror,setFaverror] = useState(null)
   const [curr,setCurr] = useState(null)
   const notify = () => toast.success('Item has been added Successfully');
   const notifyDelete = () => toast.error('Item has been Deleted');
@@ -59,7 +62,35 @@ function App() {
 
     })
     },1000);
+
+    setTimeout(()=>{
+      fetch('http://localhost:8000/fav',{signal:abortCont.signal})
+      .then(res =>{
+          
+      if(!res.ok){
+          throw Error('Could not find the data');
+          
+      }
+          return res.json();
+          
+      }).then(data => {
+          setFavdata(data)
+          setFavisPending(false)
+          setFaverror(null)
+      }).catch(e=>{
+          if(e.name !=='AbortError'){
+          setFaverror(e.message)
+          setFavisPending(false)
+          }else{
+              console.log('Error aborted')
+          }
+  
+      })
+      },1000)
+
     return () => abortCont.abort();
+
+    
 
 
 },[])
@@ -89,6 +120,38 @@ const addItem = (event,name,description,price,img,id)=>{
   console.log(data)
 
   fetch('http://localhost:8000/cart',{
+      method:'POST',
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(newData)
+  }).then(()=>{
+    
+      notify()
+  })
+  }else{
+    notifyalready()
+  }
+}
+const addtoFav = (event,name,description,price,img,id)=>{
+  const newData = {name,description,price,img,id}
+  var flag = true;
+  for(let i=0;i<Favdata.length;i++){
+    if(Favdata[i].id===id){
+      flag = false;
+    }
+  }
+  console.log(flag)
+  if(flag){
+    console.log(Favdata.data)
+    //  event.preventDefault();
+  
+  // data.push(newData)
+  
+  // const newdata = data
+  console.log(Favdata)
+  setData(prevState => [...prevState, newData])
+  console.log(Favdata)
+
+  fetch('http://localhost:8000/fav',{
       method:'POST',
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(newData)
@@ -133,7 +196,7 @@ const getTotal = (data) =>{
             <><Tabs curr={curr} changeTab={changeTab}></Tabs><Main/></>}>
   
         </Route>
-        <Route  path="/:name" element={<><Tabs curr={curr} changeTab={changeTab} ></Tabs><Shopping addItem={addItem}></Shopping></>}>
+        <Route  path="/:name" element={<><Tabs curr={curr} changeTab={changeTab} ></Tabs><Shopping addItem={addItem} addtoFav={addtoFav}></Shopping></>}>
         
         </Route>
         <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
@@ -142,7 +205,7 @@ const getTotal = (data) =>{
         <Route  path="/Cart" element={<Cart data={data}isPending={isPending}error={error} getTotal={getTotal}handleDelete = {handleDelete}></Cart>}>
           
         </Route>
-        <Route  path="/Favorite" element={<Fav></Fav>}>
+        <Route  path="/Favorite" element={<Fav Favdata={Favdata} FavisPending={FavisPending} Faverror={Faverror}></Fav>}>
           
         </Route>
         <Route  path="/Cart/pdf" element={<PDF data={data}isPending={isPending}error={error} getTotal={getTotal}></PDF>}>

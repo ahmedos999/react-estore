@@ -200,11 +200,11 @@
       "id": 17
     },
     {
-      "name": "Yellow T-Shirt",
-      "description": "Match every outfit",
-      "price": 25,
-      "img": "./imgs/t6.png",
-      "id": 7
+      "name": "R&B Nike",
+      "description": "Good for Outfits",
+      "price": 28,
+      "img": "./imgs/S2.png",
+      "id": 2
     }
   ],
   "fav": [
@@ -242,6 +242,13 @@
       "price": 25,
       "img": "./imgs/S4.png",
       "id": 4
+    },
+    {
+      "name": "Gray T-Shirt",
+      "description": "Good for suits",
+      "price": 18,
+      "img": "./imgs/t5.png",
+      "id": 9
     }
   ]
 }

@@ -28,7 +28,7 @@ const Shopping = (props) => {
             <h4>{shoe.name}</h4>
             <div className="price"><p>{shoe.description}</p> <h6>{shoe.price}$</h6></div>
             <div className="btns">
-                <button className='fav'><MdFavoriteBorder></MdFavoriteBorder>Add To Favorite</button>
+                <button className='fav' onClick={(event)=>props.addtoFav(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}><MdFavoriteBorder></MdFavoriteBorder>Add To Favorite</button>
                 <button className='buy' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}><BsCartPlus></BsCartPlus>Add To Cart</button>
             </div>
         </div>
