@@ -186,18 +186,25 @@
   ],
   "cart": [
     {
-      "name": "R&B Nike",
-      "description": "Good for Outfits",
-      "price": 28,
-      "img": "./imgs/S2.png",
-      "id": 2
+      "name": "Black Shoes",
+      "description": "Good for suits",
+      "price": 35,
+      "img": "./imgs/S3.png",
+      "id": 3
     },
     {
-      "name": "Sun Glasses",
-      "description": "high Quailty Glasses",
-      "price": 20,
-      "img": "./imgs/g6.png",
-      "id": 16
+      "name": "Rolex Watch",
+      "description": "Fancy watch",
+      "price": 120,
+      "img": "./imgs/w2.png",
+      "id": 17
+    },
+    {
+      "name": "Yellow T-Shirt",
+      "description": "Match every outfit",
+      "price": 25,
+      "img": "./imgs/t6.png",
+      "id": 7
     }
   ],
   "fav": [

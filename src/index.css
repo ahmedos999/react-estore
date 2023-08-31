@@ -62,10 +62,10 @@ button{
 .card:nth-child(1){
   margin-left: 20px;
 }
-.show>a{
+/* .show>a{
   text-decoration: none;
   cursor:auto;
-}
+} */
 .card{
   position: relative;
   margin: 20px 20px 20px 0px;
@@ -89,8 +89,12 @@ button{
   scale: 1.04;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 25px 0 rgba(0, 0, 0, 0.29);
 }
-.card>img{
+.card>a{
   height: 70%;
+  width: 100%;
+}
+.card>a>img{
+  height: 100%;
   width: 100%;
 }
 .card>h4{

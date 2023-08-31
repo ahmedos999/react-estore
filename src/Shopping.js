@@ -5,10 +5,11 @@ import {BsCartPlus} from "react-icons/bs"
 import {Link, useParams} from 'react-router-dom';
 // import Tabs from './Tabs';
 import {MdFavoriteBorder} from "react-icons/md"
+import { Toaster } from 'react-hot-toast';
 // import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
-const Shopping = () => {
+const Shopping = (props) => {
     const {name} = useParams();
     console.log(name);
     const {data:shoes,isPending,error} = useFetch('http://localhost:8000/'+name)
@@ -21,20 +22,22 @@ const Shopping = () => {
         {isPending && <div>Loading...</div>}
         {error && <div> {error} </div>}
         {shoes && shoes.map((shoe)=>(
-            <Link to={`/${name}/${shoe.id}`}><div className="card">
-            <img src={require(`${shoe.img}`)} alt="" />
+            <div className="card">
+            <Link to={`/${name}/${shoe.id}`}><img src={require(`${shoe.img}`)} alt="" /></Link>
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>
             <div className="price"><p>{shoe.description}</p> <h6>{shoe.price}$</h6></div>
             <div className="btns">
                 <button className='fav'><MdFavoriteBorder></MdFavoriteBorder>Add To Favorite</button>
-                <button className='buy'><BsCartPlus></BsCartPlus>Add To Cart</button>
+                <button className='buy' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.id)}><BsCartPlus></BsCartPlus>Add To Cart</button>
             </div>
-        </div></Link>
+        </div>
         ))}
         </div>
+        <Toaster />
         
-    </div></div> );
+    </div></div>
+     );
 }
  
 export default Shopping;

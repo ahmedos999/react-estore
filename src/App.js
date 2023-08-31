@@ -133,7 +133,7 @@ const getTotal = (data) =>{
             <><Tabs curr={curr} changeTab={changeTab}></Tabs><Main/></>}>
   
         </Route>
-        <Route  path="/:name" element={<><Tabs curr={curr} changeTab={changeTab} ></Tabs><Shopping></Shopping></>}>
+        <Route  path="/:name" element={<><Tabs curr={curr} changeTab={changeTab} ></Tabs><Shopping addItem={addItem}></Shopping></>}>
         
         </Route>
         <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
