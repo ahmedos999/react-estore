@@ -28,6 +28,13 @@ function App() {
   const [curr,setCurr] = useState(null)
   const notify = () => toast.success('Item has been added Successfully');
   const notifyDelete = () => toast.error('Item has been Deleted');
+  const notifyFav = () => toast('Item has been added to favourite',{
+    icon:'❤️',
+  });
+  const notifyRemoveFav = () => toast.error('Item has been Removed');
+  const notifyAlreadyFav = () => toast('Item has been favourite', {
+    icon: '⚠️',
+  });
   const notifyalready = () => toast('item already in Cart', {
     icon: '⚠️',
   });
@@ -109,15 +116,14 @@ const addItem = (event,name,description,price,img,id)=>{
   }
   console.log(flag)
   if(flag){
-    console.log(data.data)
     //  event.preventDefault();
   
   // data.push(newData)
   
   // const newdata = data
-  console.log(data)
+
   setData(prevState => [...prevState, newData])
-  console.log(data)
+
 
   fetch('http://localhost:8000/cart',{
       method:'POST',
@@ -139,17 +145,9 @@ const addtoFav = (event,name,description,price,img,id)=>{
       flag = false;
     }
   }
-  console.log(flag)
   if(flag){
-    console.log(Favdata.data)
-    //  event.preventDefault();
-  
-  // data.push(newData)
-  
-  // const newdata = data
-  console.log(Favdata)
-  setData(prevState => [...prevState, newData])
-  console.log(Favdata)
+
+  setFavdata(prevState => [...prevState, newData])
 
   fetch('http://localhost:8000/fav',{
       method:'POST',
@@ -157,10 +155,10 @@ const addtoFav = (event,name,description,price,img,id)=>{
       body:JSON.stringify(newData)
   }).then(()=>{
     
-      notify()
+      notifyFav()
   })
   }else{
-    notifyalready()
+    notifyAlreadyFav()
   }
 }
 const handleDelete = (id)=>{
@@ -169,6 +167,20 @@ const handleDelete = (id)=>{
   notifyDelete()
   setData(newCart)
   fetch('http://localhost:8000/cart/'+id,{
+      method:'DELETE',
+  })
+  .then(()=>{
+    
+    // window.location.reload(false);
+    // hope to change this to state for a better exprineace but still works
+  })
+}
+const removeFav = (id)=>{
+
+  const newCart = Favdata.filter(data=>data.id!==id);
+  notifyRemoveFav()
+  setFavdata(newCart)
+  fetch('http://localhost:8000/fav/'+id,{
       method:'DELETE',
   })
   .then(()=>{
@@ -205,7 +217,7 @@ const getTotal = (data) =>{
         <Route  path="/Cart" element={<Cart data={data}isPending={isPending}error={error} getTotal={getTotal}handleDelete = {handleDelete}></Cart>}>
           
         </Route>
-        <Route  path="/Favorite" element={<Fav Favdata={Favdata} FavisPending={FavisPending} Faverror={Faverror}></Fav>}>
+        <Route  path="/Favorite" element={<Fav Favdata={Favdata} FavisPending={FavisPending} Faverror={Faverror} removeFav={removeFav}></Fav>}>
           
         </Route>
         <Route  path="/Cart/pdf" element={<PDF data={data}isPending={isPending}error={error} getTotal={getTotal}></PDF>}>

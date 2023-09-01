@@ -1,6 +1,7 @@
 
 import {BsCartPlus} from "react-icons/bs"
 import {MdFavorite} from "react-icons/md"
+import { Toaster } from 'react-hot-toast';
 
 const Fav = (props) => {
     return ( <div className="maincontent">
@@ -15,13 +16,13 @@ const Fav = (props) => {
         <h4>{Favdata.name}</h4>
         <div className="price"><p>{Favdata.description}</p> <h6>{Favdata.price}$</h6></div>
         <div className="btns">
-            <button className='fav'><MdFavorite></MdFavorite>Remove Favorite</button>
-            <button className='buy'><BsCartPlus></BsCartPlus>Add To Cart</button>
+            <button className='fav' onClick={()=>props.removeFav(Favdata.id)}><MdFavorite></MdFavorite>Remove Favorite</button>
+            <button className='buy'><BsCartPlus onClick={()=>props.addItem(Favdata.id)}></BsCartPlus>Add To Cart</button>
         </div>
     </div>
     ))}
     </div>
-    
+    <Toaster></Toaster>
 </div> );
 }
  
