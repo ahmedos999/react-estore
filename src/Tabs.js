@@ -22,11 +22,11 @@ const Tabs = (props) => {
   handleClick(props.curr)
     return ( <div className="tabs">
         <ul>
-            <Link to="/shoes"><li onClick={()=>props.changeTab('Shoes')}>Shoes</li></Link>
-            <Link to="/tshirts"><li onClick={()=>props.changeTab('T-Shirts')}>T-Shirts</li></Link>
-            <Link to="/pants"><li onClick={()=>props.changeTab('Pants')}>Pants</li></Link>
-            <Link to="/watchs"><li onClick={()=>props.changeTab('Accessories')}>Accessories</li></Link>
-            <Link to="/glasses"><li onClick={()=>props.changeTab('Glasses')}>Glasses</li></Link>
+            <Link to="/Shoes"><li onClick={()=>props.changeTab('Shoes')}>Shoes</li></Link>
+            <Link to="/T-Shirts"><li onClick={()=>props.changeTab('T-Shirts')}>T-Shirts</li></Link>
+            <Link to="/Pants"><li onClick={()=>props.changeTab('Pants')}>Pants</li></Link>
+            <Link to="/Accessories"><li onClick={()=>props.changeTab('Accessories')}>Accessories</li></Link>
+            <Link to="/Glasses"><li onClick={()=>props.changeTab('Glasses')}>Glasses</li></Link>
         </ul>
     </div> );
 }

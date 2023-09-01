@@ -1,5 +1,5 @@
 {
-  "shoes": [
+  "Shoes": [
     {
       "name": "Blue Nike",
       "description": "Running shoes",
@@ -41,13 +41,13 @@
       "id": 5
     }
   ],
-  "tshirts": [
+  "T-Shirts": [
     {
       "name": "White T-Shirt",
       "description": "high Quailty T-shirt",
       "price": 22,
       "img": "./imgs/t2.png",
-      "cate": "T-Shirt",
+      "cate": "T-Shirts",
       "id": 6
     },
     {
@@ -55,7 +55,7 @@
       "description": "Match every outfit",
       "price": 25,
       "img": "./imgs/t6.png",
-      "cate": "T-Shirt",
+      "cate": "T-Shirts",
       "id": 7
     },
     {
@@ -63,7 +63,7 @@
       "description": "Fittness Shirt",
       "price": 28,
       "img": "./imgs/t4.png",
-      "cate": "T-Shirt",
+      "cate": "T-Shirts",
       "id": 8
     },
     {
@@ -71,7 +71,7 @@
       "description": "Good for suits",
       "price": 18,
       "img": "./imgs/t5.png",
-      "cate": "T-Shirt",
+      "cate": "T-Shirts",
       "id": 9
     },
     {
@@ -79,11 +79,11 @@
       "description": "Good for Running",
       "price": 30,
       "img": "./imgs/t3.png",
-      "cate": "T-Shirt",
+      "cate": "T-Shirts",
       "id": 10
     }
   ],
-  "pants": [
+  "Pants": [
     {
       "name": "Max Pants",
       "description": "high Quailty Pants",
@@ -125,7 +125,7 @@
       "id": 15
     }
   ],
-  "watchs": [
+  "Accessories": [
     {
       "name": "Georg watch",
       "description": "high Quailty watch",
@@ -167,14 +167,14 @@
       "id": 20
     }
   ],
-  "glasses": [
+  "Glasses": [
     {
       "name": "Sun Glasses",
       "description": "high Quailty Glasses",
       "price": 20,
       "img": "./imgs/g6.png",
       "cate": "Glasses",
-      "id": 16
+      "id": 21
     },
     {
       "name": "Black Glasses",
@@ -182,7 +182,7 @@
       "price": 20,
       "img": "./imgs/g5.png",
       "cate": "Glasses",
-      "id": 17
+      "id": 22
     },
     {
       "name": "Read Glasses",
@@ -190,7 +190,7 @@
       "price": 20,
       "img": "./imgs/g4.png",
       "cate": "Glasses",
-      "id": 18
+      "id": 23
     },
     {
       "name": "Show Glasses",
@@ -198,7 +198,7 @@
       "price": 20,
       "img": "./imgs/g7.png",
       "cate": "Glasses",
-      "id": 19
+      "id": 24
     },
     {
       "name": "Fun Glasses",
@@ -206,10 +206,18 @@
       "price": 20,
       "img": "./imgs/g8.png",
       "cate": "Glasses",
-      "id": 20
+      "id": 25
     }
   ],
   "cart": [
+    {
+      "name": "Blue Nike",
+      "description": "Running shoes",
+      "price": 20,
+      "img": "./imgs/S1.png",
+      "cate": "Shoes",
+      "id": 1
+    },
     {
       "name": "R&B Nike",
       "description": "Good for Outfits",
@@ -217,48 +225,24 @@
       "img": "./imgs/S2.png",
       "cate": "Shoes",
       "id": 2
-    },
-    {
-      "name": "Black Shoes",
-      "description": "Good for suits",
-      "price": 35,
-      "img": "./imgs/S3.png",
-      "cate": "Shoes",
-      "id": 3
-    },
-    {
-      "name": "Blue Nike",
-      "description": "Running shoes",
-      "price": 20,
-      "img": "./imgs/S1.png",
-      "cate": "Shoes",
-      "id": 1
     }
   ],
   "fav": [
     {
-      "name": "Sport adidas",
-      "description": "Good for running",
-      "price": 25,
-      "img": "./imgs/S4.png",
-      "cate": "Shoes",
-      "id": 4
-    },
-    {
-      "name": "Black Shoes",
-      "description": "Good for suits",
-      "price": 35,
-      "img": "./imgs/S3.png",
-      "cate": "Shoes",
-      "id": 3
-    },
-    {
-      "name": "Blue Nike",
-      "description": "Running shoes",
+      "name": "Read Glasses",
+      "description": "good for books",
       "price": 20,
-      "img": "./imgs/S1.png",
-      "cate": "Shoes",
-      "id": 1
+      "img": "./imgs/g4.png",
+      "cate": "Glasses",
+      "id": 23
+    },
+    {
+      "name": "Show Glasses",
+      "description": "Good for Daylight",
+      "price": 20,
+      "img": "./imgs/g7.png",
+      "cate": "Glasses",
+      "id": 24
     }
   ]
 }

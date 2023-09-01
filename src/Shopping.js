@@ -23,7 +23,7 @@ const Shopping = (props) => {
         {error && <div> {error} </div>}
         {shoes && shoes.map((shoe)=>(
             <div className="card">
-            <Link to={`/${name}/${shoe.id}`}><img src={require(`${shoe.img}`)} alt="" /></Link>
+            <Link to={`/${shoe.cate}/${shoe.id}`}><img src={require(`${shoe.img}`)} alt="" /></Link>
             <div className="badge"><h5>50% Off</h5></div>
             <h4>{shoe.name}</h4>
             <div className="price"><p>{shoe.description}</p> <h6>{shoe.price}$</h6></div>
