@@ -106,8 +106,8 @@ const changeTab = (name)=>{
   setCurr(name)
 }
 
-const addItem = (event,name,description,price,img,id)=>{
-  const newData = {name,description,price,img,id}
+const addItem = (event,name,description,price,img,cate,id)=>{
+  const newData = {name,description,price,img,cate,id}
   var flag = true;
   for(let i=0;i<data.length;i++){
     if(data[i].id===id){
@@ -137,8 +137,8 @@ const addItem = (event,name,description,price,img,id)=>{
     notifyalready()
   }
 }
-const addtoFav = (event,name,description,price,img,id)=>{
-  const newData = {name,description,price,img,id}
+const addtoFav = (event,name,description,price,img,cate,id)=>{
+  const newData = {name,description,price,img,cate,id}
   var flag = true;
   for(let i=0;i<Favdata.length;i++){
     if(Favdata[i].id===id){
