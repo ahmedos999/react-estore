@@ -217,7 +217,7 @@ const getTotal = (data) =>{
         <Route  path="/Cart" element={<Cart data={data}isPending={isPending}error={error} getTotal={getTotal}handleDelete = {handleDelete}></Cart>}>
           
         </Route>
-        <Route  path="/Favorite" element={<Fav Favdata={Favdata} FavisPending={FavisPending} Faverror={Faverror} removeFav={removeFav}></Fav>}>
+        <Route  path="/Favorite" element={<Fav Favdata={Favdata} FavisPending={FavisPending} Faverror={Faverror} removeFav={removeFav} addItem={addItem}></Fav>}>
           
         </Route>
         <Route  path="/Cart/pdf" element={<PDF data={data}isPending={isPending}error={error} getTotal={getTotal}></PDF>}>

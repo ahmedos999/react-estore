@@ -17,7 +17,7 @@ const Fav = (props) => {
         <div className="price"><p>{Favdata.description}</p> <h6>{Favdata.price}$</h6></div>
         <div className="btns">
             <button className='fav' onClick={()=>props.removeFav(Favdata.id)}><MdFavorite></MdFavorite>Remove Favorite</button>
-            <button className='buy'><BsCartPlus onClick={()=>props.addItem(Favdata.id)}></BsCartPlus>Add To Cart</button>
+            <button className='buy' onClick={(event)=>props.addItem(event,Favdata.name,Favdata.description,Favdata.price,Favdata.img,Favdata.id)}><BsCartPlus></BsCartPlus>Add To Cart</button>
         </div>
     </div>
     ))}

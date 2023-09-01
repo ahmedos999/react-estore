@@ -205,6 +205,20 @@
       "price": 28,
       "img": "./imgs/S2.png",
       "id": 2
+    },
+    {
+      "name": "Show Glasses",
+      "description": "Good for Daylight",
+      "price": 20,
+      "img": "./imgs/g7.png",
+      "id": 19
+    },
+    {
+      "name": "Yellow T-Shirt",
+      "description": "Match every outfit",
+      "price": 25,
+      "img": "./imgs/t6.png",
+      "id": 7
     }
   ],
   "fav": [
@@ -230,11 +244,25 @@
       "id": 17
     },
     {
-      "name": "Read Glasses",
-      "description": "good for books",
-      "price": 20,
-      "img": "./imgs/g4.png",
-      "id": 18
+      "name": "White T-Shirt",
+      "description": "high Quailty T-shirt",
+      "price": 22,
+      "img": "./imgs/t2.png",
+      "id": 6
+    },
+    {
+      "name": "Yellow T-Shirt",
+      "description": "Match every outfit",
+      "price": 25,
+      "img": "./imgs/t6.png",
+      "id": 7
+    },
+    {
+      "name": "Black T-Shirt",
+      "description": "Fittness Shirt",
+      "price": 28,
+      "img": "./imgs/t4.png",
+      "id": 8
     }
   ]
 }
