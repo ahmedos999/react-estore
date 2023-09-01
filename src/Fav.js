@@ -2,7 +2,7 @@
 import {BsCartPlus} from "react-icons/bs"
 import {MdFavorite} from "react-icons/md"
 import { Toaster } from 'react-hot-toast';
-
+import {Link} from 'react-router-dom';
 const Fav = (props) => {
     return ( <div className="maincontent">
     <h2>Your Favorites <MdFavorite></MdFavorite></h2>
@@ -11,7 +11,7 @@ const Fav = (props) => {
     {props.Faverror && <div> {props.Faverro} </div>}
     {props.Favdata && props.Favdata.map((Favdata)=>(
         <div className="card">
-        <img src={require(`${Favdata.img}`)} alt="" />
+        <Link to={`/${Favdata.cate}/${Favdata.id}`}><img src={require(`${Favdata.img}`)} alt="" /></Link>
         <div className="badge"><h5>50% Off</h5></div>
         <h4>{Favdata.name}</h4>
         <div className="price"><p>{Favdata.description}</p> <h6>{Favdata.price}$</h6></div>

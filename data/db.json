@@ -225,6 +225,14 @@
       "img": "./imgs/S2.png",
       "cate": "Shoes",
       "id": 2
+    },
+    {
+      "name": "Black T-Shirt",
+      "description": "Fittness Shirt",
+      "price": 28,
+      "img": "./imgs/t4.png",
+      "cate": "T-Shirts",
+      "id": 8
     }
   ],
   "fav": [
@@ -243,6 +251,86 @@
       "img": "./imgs/g7.png",
       "cate": "Glasses",
       "id": 24
+    },
+    {
+      "name": "Black Glasses",
+      "description": "Match every outfit",
+      "price": 20,
+      "img": "./imgs/g5.png",
+      "cate": "Glasses",
+      "id": 22
+    },
+    {
+      "name": "Fun Glasses",
+      "description": "Good for Showing of",
+      "price": 20,
+      "img": "./imgs/g8.png",
+      "cate": "Glasses",
+      "id": 25
+    },
+    {
+      "name": "Sun Glasses",
+      "description": "high Quailty Glasses",
+      "price": 20,
+      "img": "./imgs/g6.png",
+      "cate": "Glasses",
+      "id": 21
+    },
+    {
+      "name": "Black Shoes",
+      "description": "Good for suits",
+      "price": 35,
+      "img": "./imgs/S3.png",
+      "cate": "Shoes",
+      "id": 3
+    },
+    {
+      "name": "Sport adidas",
+      "description": "Good for running",
+      "price": 25,
+      "img": "./imgs/S4.png",
+      "cate": "Shoes",
+      "id": 4
+    },
+    {
+      "name": "Black T-Shirt",
+      "description": "Fittness Shirt",
+      "price": 28,
+      "img": "./imgs/t4.png",
+      "cate": "T-Shirts",
+      "id": 8
+    },
+    {
+      "name": "White T-Shirt",
+      "description": "high Quailty T-shirt",
+      "price": 22,
+      "img": "./imgs/t2.png",
+      "cate": "T-Shirts",
+      "id": 6
+    },
+    {
+      "name": "Light Pants",
+      "description": "Good for Running",
+      "price": 38,
+      "img": "./imgs/j4.png",
+      "cate": "Pants",
+      "id": 14
+    },
+    {
+      "name": "Heavy Pants",
+      "description": "Show Pants",
+      "price": 40,
+      "img": "./imgs/j3.png",
+      "cate": "Pants",
+      "id": 13
+    },
+    {
+      "name": "Rolex Watch",
+      "description": "Fancy watch",
+      "price": 120,
+      "img": "./imgs/w2.png",
+      "cate": "Accessories",
+      "id": 17
     }
   ]
 }
