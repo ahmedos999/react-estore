@@ -143,17 +143,17 @@ const Cart = ({data,isPending,error,getTotal,handleDelete,updateCounter}) => {
                   <h4>Pickup Style - In Store</h4>
       
                   <div className="counter">
-                      <button onClick={()=>updateCounter(data.id)}>-</button>
+                      <button onClick={()=>updateCounter(data.id,'-')}>-</button>
                       <h4>{data.counter}</h4>
-                      <button onClick={()=>updateCounter(data.id)}>+</button>
+                      <button onClick={()=>updateCounter(data.id,'+')}>+</button>
                   </div>
                   
                   </div>
                   <div className='options'>
                   <div>
-                      <RiDeleteBin6Line className='delete-icon' onClick={()=>handleDelete(data.id,{counter: 2,})}></RiDeleteBin6Line>
+                      <RiDeleteBin6Line className='delete-icon' onClick={()=>handleDelete(data.id)}></RiDeleteBin6Line>
                   </div>
-                  <h3>Price : {Number(data.price).toFixed(2)}$</h3>
+                  <h3>Price : {Number(data.total).toFixed(2)}$</h3>
                   </div>
       
               </div>

@@ -48,7 +48,7 @@ const Product = (props) => {
             <div className="Total"><h4>Total amount</h4><p>{shoe.price+shoe.price * 15/100}$</p></div>
         </div>
         <div className="btn-container">
-        <button className='buy-2' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.cate,1,'M',shoe.id)}>Confirm Order</button>
+        <button className='buy-2' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.cate,1,'M',shoe.price,shoe.id)}>Confirm Order</button>
         </div>
         <Toaster />
         

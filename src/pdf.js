@@ -111,8 +111,8 @@ var datetime =  currentdate.getDate() + "/"
             </View>
             {data.map((data)=>(
                 <View style={styles.row}>
-                <Text style={styles.Itemdetails}>{data.name}</Text>
-                <Text style={styles.Itemdetails}>{data.price}$</Text>
+                <Text style={styles.Itemdetails}>{data.name}({data.counter})</Text>
+                <Text style={styles.Itemdetails}>{data.total}$</Text>
               </View>
       ))}
             <View style={styles.row}>

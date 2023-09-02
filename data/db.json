@@ -218,18 +218,29 @@
       "cate": "Shoes",
       "counter": 1,
       "size": "M",
+      "total": 20,
       "id": 1
     },
     {
-      "name": "Black Shoes",
-      "description": "Good for suits",
-      "price": 35,
-      "img": "./imgs/S3.png",
+      "name": "R&B Nike",
+      "description": "Good for Outfits",
+      "price": 28,
+      "img": "./imgs/S2.png",
       "cate": "Shoes",
       "counter": 1,
       "size": "M",
-      "id": 3
+      "total": 28,
+      "id": 2
     }
   ],
-  "fav": []
+  "fav": [
+    {
+      "name": "Gray T-Shirt",
+      "description": "Good for suits",
+      "price": 18,
+      "img": "./imgs/t5.png",
+      "cate": "T-Shirts",
+      "id": 9
+    }
+  ]
 }

@@ -38,6 +38,9 @@ function App() {
   const notifyalready = () => toast('item already in Cart', {
     icon: '⚠️',
   });
+  const max = () => toast('maxuiman count per item is 5', {
+    icon: '⚠️',
+  });
 
   
 
@@ -106,8 +109,8 @@ const changeTab = (name)=>{
   setCurr(name)
 }
 
-const addItem = (event,name,description,price,img,cate,counter,size,id)=>{
-  const newData = {name,description,price,img,cate,counter,size,id}
+const addItem = (event,name,description,price,img,cate,counter,size,total,id)=>{
+  const newData = {name,description,price,img,cate,counter,size,total,id}
   var flag = true;
   for(let i=0;i<data.length;i++){
     if(data[i].id===id){
@@ -189,14 +192,14 @@ const removeFav = (id)=>{
     // hope to change this to state for a better exprineace but still works
   })
 }
-const updateCounter = (id) => {
+const updateCounter = (id,symbol) => {
  const updatedarray = data.map((item)=>{
     if(item.id===id){
-      item.counter++
+      symbol==='+'?item.counter<5?item.counter++:max():item.counter>1?item.counter--:console.log('cant remove')
+      item.total = item.price*item.counter
     }
     return item
   })
-  console.log(updatedarray)
 
   setData(updatedarray)
 };
@@ -204,7 +207,7 @@ const getTotal = (data) =>{
   console.log(data)
   var total = 0;
   for(let i=0;i<data.length;i++){
-    total+=data[i].price
+    total+=data[i].total
   }
   return total
 }
