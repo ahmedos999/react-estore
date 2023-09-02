@@ -106,8 +106,8 @@ const changeTab = (name)=>{
   setCurr(name)
 }
 
-const addItem = (event,name,description,price,img,cate,id)=>{
-  const newData = {name,description,price,img,cate,id}
+const addItem = (event,name,description,price,img,cate,counter,size,id)=>{
+  const newData = {name,description,price,img,cate,counter,size,id}
   var flag = true;
   for(let i=0;i<data.length;i++){
     if(data[i].id===id){
@@ -189,6 +189,17 @@ const removeFav = (id)=>{
     // hope to change this to state for a better exprineace but still works
   })
 }
+const updateCounter = (id) => {
+ const updatedarray = data.map((item)=>{
+    if(item.id===id){
+      item.counter++
+    }
+    return item
+  })
+  console.log(updatedarray)
+
+  setData(updatedarray)
+};
 const getTotal = (data) =>{
   console.log(data)
   var total = 0;
@@ -214,7 +225,7 @@ const getTotal = (data) =>{
         <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
           
         </Route>
-        <Route  path="/Cart" element={<Cart data={data}isPending={isPending}error={error} getTotal={getTotal}handleDelete = {handleDelete}></Cart>}>
+        <Route  path="/Cart" element={<Cart data={data}isPending={isPending}error={error} getTotal={getTotal}handleDelete = {handleDelete} updateCounter={updateCounter}></Cart>}>
           
         </Route>
         <Route  path="/Favorite" element={<Fav Favdata={Favdata} FavisPending={FavisPending} Faverror={Faverror} removeFav={removeFav} addItem={addItem}></Fav>}>

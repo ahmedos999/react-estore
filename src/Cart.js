@@ -1,4 +1,4 @@
-import { useState} from "react";
+// import { useState} from "react";
 // import img from './/imgs/S2.png'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 // import useFetch from './useFetch';
@@ -8,27 +8,27 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Cart = ({data,isPending,error,getTotal,handleDelete}) => {
+const Cart = ({data,isPending,error,getTotal,handleDelete,updateCounter}) => {
   // console.log(getTotal)
-    const [counter,setCounter] = useState(1);
-    // const [cartinfo,setCartInfo] = useState(0)
-    // const notify = () => toast.error('Item has been Removed');
-    function increment() {
-        //setCount(prevCount => prevCount+=1);
-        setCounter(function (prevCount) {
-          return (prevCount += 1);
-        });
-      }
+    // const [counter,setCounter] = useState(1);
+    // // const [cartinfo,setCartInfo] = useState(0)
+    // // const notify = () => toast.error('Item has been Removed');
+    // function increment() {
+    //     //setCount(prevCount => prevCount+=1);
+    //     setCounter(function (prevCount) {
+    //       return (prevCount += 1);
+    //     });
+    //   }
     
-      function decrement() {
-        setCounter(function (prevCount) {
-          if (prevCount > 0) {
-            return (prevCount -= 1); 
-          } else {
-            return (prevCount = 0);
-          }
-        });
-      }
+    //   function decrement() {
+    //     setCounter(function (prevCount) {
+    //       if (prevCount > 0) {
+    //         return (prevCount -= 1); 
+    //       } else {
+    //         return (prevCount = 0);
+    //       }
+    //     });
+    //   }
 
       const navigate = useNavigate();
 
@@ -138,20 +138,20 @@ const Cart = ({data,isPending,error,getTotal,handleDelete}) => {
                   <h2>{data.name}</h2>
                   <p>{data.description}</p>
                   
-                  <h4>Size - M</h4>
+                  <h4>Size - {data.size}</h4>
                   <h4>Color - Black</h4>
                   <h4>Pickup Style - In Store</h4>
       
                   <div className="counter">
-                      <button onClick={decrement}>-</button>
-                      <h4>{counter}</h4>
-                      <button onClick={increment}>+</button>
+                      <button onClick={()=>updateCounter(data.id)}>-</button>
+                      <h4>{data.counter}</h4>
+                      <button onClick={()=>updateCounter(data.id)}>+</button>
                   </div>
                   
                   </div>
                   <div className='options'>
                   <div>
-                      <RiDeleteBin6Line className='delete-icon' onClick={()=>handleDelete(data.id)}></RiDeleteBin6Line>
+                      <RiDeleteBin6Line className='delete-icon' onClick={()=>handleDelete(data.id,{counter: 2,})}></RiDeleteBin6Line>
                   </div>
                   <h3>Price : {Number(data.price).toFixed(2)}$</h3>
                   </div>

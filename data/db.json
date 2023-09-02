@@ -216,33 +216,20 @@
       "price": 20,
       "img": "./imgs/S1.png",
       "cate": "Shoes",
+      "counter": 1,
+      "size": "M",
       "id": 1
     },
     {
-      "name": "R&B Nike",
-      "description": "Good for Outfits",
-      "price": 28,
-      "img": "./imgs/S2.png",
+      "name": "Black Shoes",
+      "description": "Good for suits",
+      "price": 35,
+      "img": "./imgs/S3.png",
       "cate": "Shoes",
-      "id": 2
-    },
-    {
-      "name": "Black T-Shirt",
-      "description": "Fittness Shirt",
-      "price": 28,
-      "img": "./imgs/t4.png",
-      "cate": "T-Shirts",
-      "id": 8
+      "counter": 1,
+      "size": "M",
+      "id": 3
     }
   ],
-  "fav": [
-    {
-      "name": "Rolex Watch",
-      "description": "Fancy watch",
-      "price": 120,
-      "img": "./imgs/w2.png",
-      "cate": "Accessories",
-      "id": 17
-    }
-  ]
+  "fav": []
 }
