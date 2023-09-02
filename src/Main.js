@@ -4,10 +4,6 @@ import img3 from './/imgs/J1.png'
 import img4 from './/imgs/w1.png'
 import img5 from './/imgs/g5.png'
 import { FaShopify } from "react-icons/fa";
-// import Tabs from './Tabs';
-// import useFetch from './useFetch';
-
-// import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { EffectCube, Pagination,Autoplay,Navigation,EffectCards,EffectCoverflow} from 'swiper/modules';
@@ -15,16 +11,16 @@ import { EffectCube, Pagination,Autoplay,Navigation,EffectCards,EffectCoverflow}
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
+import { useNavigate } from "react-router-dom";
 
 
 
 const Main = () => {
-    // $('input').on('change', function() {
-    //     $('body').toggleClass('blue');
-    //   });
-    // const {name} = useParams();
-    // console.log(name);
-    // const {data:shoes,isPending,error} = useFetch('http://localhost:8000/'+name)
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("Shoes");
+  }
 
     return ( <div>
       {/* <Tabs></Tabs> */}
@@ -35,7 +31,7 @@ const Main = () => {
             Welcome the E-Store
             </h2>
             <p>Checkout our finest Offers and Sales <br /> Shop easliy and find what you like with great offers</p>
-            <button>Shop Now</button>
+            <button onClick={handleClick}>Shop Now</button>
         </div>
         <div className='test'>
         <Swiper
