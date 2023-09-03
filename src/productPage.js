@@ -39,7 +39,7 @@ const Product = (props) => {
         <h2>{shoe.name} <span><SiNike className='nike'></SiNike></span></h2>
         <p>This shoes are prefect for running and training they give you comfortable space for you foot, it also has good shoe floor that prevent foot from sweating.</p>
         <div className="rate"><BsStarFill className='rating-icon'/><BsStarFill className='rating-icon'/><BsStarFill className='rating-icon'/><BsStarFill className='rating-icon'/><BsStarHalf className='rating-icon'/></div>
-        <div className="item-size"><h5>Size - M</h5><h5>Color - gray</h5></div>
+        <div className="item-size"><h5>Size - {shoe.size}</h5><h5>Color - {shoe.color}</h5></div>
         <div className="original-price">Price: <span>{shoe.price/2}$</span>{shoe.price}$</div>
 
         <div className="extra-info">
@@ -49,7 +49,7 @@ const Product = (props) => {
             <div className="Total"><h4>Total amount</h4><p>{shoe.price+shoe.price * 15/100}$</p></div>
         </div>
         <div className="btn-container">
-        <button className='buy-2' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.cate,1,'M',shoe.price,shoe.id)}>Confirm Order</button>
+        <button className='buy-2' onClick={(event)=>props.addItem(event,shoe.name,shoe.description,shoe.price,shoe.img,shoe.cate,1,shoe.size,shoe.color,shoe.price,shoe.id)}>Confirm Order</button>
         </div>
         <Toaster />
         

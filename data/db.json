@@ -5,6 +5,8 @@
       "description": "Running shoes",
       "price": 20,
       "img": "./imgs/S1.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Shoes",
       "id": 1
     },
@@ -13,6 +15,8 @@
       "description": "Good for Outfits",
       "price": 28,
       "img": "./imgs/S2.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Shoes",
       "id": 2
     },
@@ -21,6 +25,8 @@
       "description": "Good for suits",
       "price": 35,
       "img": "./imgs/S3.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Shoes",
       "id": 3
     },
@@ -29,6 +35,8 @@
       "description": "Good for running",
       "price": 25,
       "img": "./imgs/S4.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Shoes",
       "id": 4
     },
@@ -37,6 +45,8 @@
       "description": "Good for Showing off",
       "price": 18,
       "img": "./imgs/S5.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Shoes",
       "id": 5
     }
@@ -47,6 +57,8 @@
       "description": "high Quailty T-shirt",
       "price": 22,
       "img": "./imgs/t2.png",
+      "color": "Black",
+      "size": "M",
       "cate": "T-Shirts",
       "id": 6
     },
@@ -55,6 +67,8 @@
       "description": "Match every outfit",
       "price": 25,
       "img": "./imgs/t6.png",
+      "color": "Black",
+      "size": "M",
       "cate": "T-Shirts",
       "id": 7
     },
@@ -63,6 +77,8 @@
       "description": "Fittness Shirt",
       "price": 28,
       "img": "./imgs/t4.png",
+      "color": "Black",
+      "size": "M",
       "cate": "T-Shirts",
       "id": 8
     },
@@ -71,6 +87,8 @@
       "description": "Good for suits",
       "price": 18,
       "img": "./imgs/t5.png",
+      "color": "Black",
+      "size": "M",
       "cate": "T-Shirts",
       "id": 9
     },
@@ -79,6 +97,8 @@
       "description": "Good for Running",
       "price": 30,
       "img": "./imgs/t3.png",
+      "color": "Black",
+      "size": "M",
       "cate": "T-Shirts",
       "id": 10
     }
@@ -89,6 +109,8 @@
       "description": "high Quailty Pants",
       "price": 44,
       "img": "./imgs/J1.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Pants",
       "id": 11
     },
@@ -97,6 +119,8 @@
       "description": "Match every Suit",
       "price": 54,
       "img": "./imgs/j2.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Pants",
       "id": 12
     },
@@ -105,6 +129,8 @@
       "description": "Show Pants",
       "price": 40,
       "img": "./imgs/j3.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Pants",
       "id": 13
     },
@@ -113,6 +139,8 @@
       "description": "Good for Running",
       "price": 38,
       "img": "./imgs/j4.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Pants",
       "id": 14
     },
@@ -121,6 +149,8 @@
       "description": "Good for Showing of",
       "price": 40,
       "img": "./imgs/j5.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Pants",
       "id": 15
     }
@@ -131,6 +161,8 @@
       "description": "high Quailty watch",
       "price": 60,
       "img": "./imgs/w1.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Accessories",
       "id": 16
     },
@@ -139,6 +171,8 @@
       "description": "Fancy watch",
       "price": 120,
       "img": "./imgs/w2.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Accessories",
       "id": 17
     },
@@ -147,6 +181,8 @@
       "description": "Fittness Pants",
       "price": 80,
       "img": "./imgs/w3.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Accessories",
       "id": 18
     },
@@ -155,6 +191,8 @@
       "description": "Good for Showing off",
       "price": 40,
       "img": "./imgs/w4.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Accessories",
       "id": 19
     },
@@ -163,6 +201,8 @@
       "description": "Good for Running",
       "price": 45,
       "img": "./imgs/w5.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Accessories",
       "id": 20
     }
@@ -173,6 +213,8 @@
       "description": "high Quailty Glasses",
       "price": 20,
       "img": "./imgs/g6.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Glasses",
       "id": 21
     },
@@ -181,6 +223,8 @@
       "description": "Match every outfit",
       "price": 20,
       "img": "./imgs/g5.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Glasses",
       "id": 22
     },
@@ -189,8 +233,88 @@
       "description": "good for books",
       "price": 20,
       "img": "./imgs/g4.png",
+      "color": "Black",
+      "size": "M",
       "cate": "Glasses",
       "id": 23
+    },
+    {
+      "name": "Show Glasses",
+      "description": "Good for Daylight",
+      "price": 20,
+      "img": "./imgs/g7.png",
+      "color": "Black",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 24
+    },
+    {
+      "name": "Fun Glasses",
+      "description": "Good for Showing of",
+      "price": 20,
+      "img": "./imgs/g8.png",
+      "color": "Black",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 25
+    }
+  ],
+  "cart": [
+    {
+      "name": "Blue Nike",
+      "description": "Running shoes",
+      "price": 20,
+      "img": "./imgs/S1.png",
+      "cate": "Shoes",
+      "counter": 1,
+      "size": "M",
+      "color": "Black",
+      "total": 20,
+      "id": 1
+    },
+    {
+      "name": "Yellow T-Shirt",
+      "description": "Match every outfit",
+      "price": 25,
+      "img": "./imgs/t6.png",
+      "cate": "T-Shirts",
+      "counter": 1,
+      "size": "M",
+      "color": "Black",
+      "total": 25,
+      "id": 7
+    },
+    {
+      "name": "Rolex Watch",
+      "description": "Fancy watch",
+      "price": 120,
+      "img": "./imgs/w2.png",
+      "cate": "Accessories",
+      "counter": 1,
+      "size": "M",
+      "color": "Black",
+      "total": 120,
+      "id": 17
+    },
+    {
+      "name": "R&B Nike",
+      "description": "Good for Outfits",
+      "price": 28,
+      "img": "./imgs/S2.png",
+      "cate": "Shoes",
+      "counter": 1,
+      "total": 28,
+      "id": 2
+    }
+  ],
+  "fav": [
+    {
+      "name": "R&B Nike",
+      "description": "Good for Outfits",
+      "price": 28,
+      "img": "./imgs/S2.png",
+      "cate": "Shoes",
+      "id": 2
     },
     {
       "name": "Show Glasses",
@@ -201,37 +325,20 @@
       "id": 24
     },
     {
-      "name": "Fun Glasses",
-      "description": "Good for Showing of",
+      "name": "Read Glasses",
+      "description": "good for books",
       "price": 20,
-      "img": "./imgs/g8.png",
+      "img": "./imgs/g4.png",
       "cate": "Glasses",
-      "id": 25
-    }
-  ],
-  "cart": [
-    {
-      "name": "Black Glasses",
-      "description": "Match every outfit",
-      "price": 20,
-      "img": "./imgs/g5.png",
-      "cate": "Glasses",
-      "counter": 1,
-      "size": "M",
-      "total": 20,
-      "id": 22
+      "id": 23
     },
     {
-      "name": "R&B Nike",
-      "description": "Good for Outfits",
-      "price": 28,
-      "img": "./imgs/S2.png",
-      "cate": "Shoes",
-      "counter": 1,
-      "size": "M",
-      "total": 28,
-      "id": 2
+      "name": "Heavy Pants",
+      "description": "Show Pants",
+      "price": 40,
+      "img": "./imgs/j3.png",
+      "cate": "Pants",
+      "id": 13
     }
-  ],
-  "fav": []
+  ]
 }
