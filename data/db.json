@@ -261,28 +261,16 @@
   ],
   "cart": [
     {
-      "name": "R&B Nike",
-      "description": "Good for Outfits",
-      "price": 28,
-      "img": "./imgs/S2.png",
-      "cate": "Shoes",
+      "name": "Black Glasses",
+      "description": "Match every outfit",
+      "price": 20,
+      "img": "./imgs/g5.png",
+      "cate": "Glasses",
       "counter": 1,
       "size": "M",
       "color": "Black",
-      "total": 28,
-      "id": 2
-    },
-    {
-      "name": "Smart Watch",
-      "description": "Fittness Pants",
-      "price": 80,
-      "img": "./imgs/w3.png",
-      "cate": "Accessories",
-      "counter": 1,
-      "size": "M",
-      "color": "Black",
-      "total": 80,
-      "id": 18
+      "total": 20,
+      "id": 22
     }
   ],
   "fav": []

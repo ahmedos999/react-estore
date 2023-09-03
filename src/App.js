@@ -28,7 +28,6 @@ function App() {
   const [Favdata,setFavdata] = useState(null)
   const [FavisPending,setFavisPending] = useState(true)
   const [Faverror,setFaverror] = useState(null)
-  const [curr,setCurr] = useState(null)
   const notify = () => toast.success('Item has been added Successfully');
   const notifyDelete = () => toast.error('Item has been Deleted');
   const notifyFav = () => toast('Item has been added to favourite',{
@@ -110,9 +109,6 @@ function App() {
 
 },[])
 
-const changeTab = (name)=>{
-  setCurr(name)
-}
 
 const addItem = (event,name,description,price,img,cate,counter,size,color,total,id)=>{
   const newData = {name,description,price,img,cate,counter,size,color,total,id}
@@ -124,11 +120,6 @@ const addItem = (event,name,description,price,img,cate,counter,size,color,total,
   }
   console.log(flag)
   if(flag){
-    //  event.preventDefault();
-  
-  // data.push(newData)
-  
-  // const newdata = data
 
   setData(prevState => [...prevState, newData])
 
@@ -225,10 +216,10 @@ const getTotal = (data) =>{
       
       <Routes>
         <Route path="/" element={
-            <><Tabs curr={curr} changeTab={changeTab}></Tabs><Main/></>}>
+            <><Tabs></Tabs><Main/></>}>
   
         </Route>
-        <Route  path="/:name" element={<><Tabs curr={curr} changeTab={changeTab} ></Tabs><Shopping addItem={addItem} addtoFav={addtoFav}></Shopping></>}>
+        <Route  path="/:name" element={<><Tabs></Tabs><Shopping addItem={addItem} addtoFav={addtoFav}></Shopping></>}>
         
         </Route>
         <Route  path="/:product/:id" element={<Product addItem={addItem}></Product>}>
