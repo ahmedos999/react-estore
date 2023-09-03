@@ -211,15 +211,15 @@
   ],
   "cart": [
     {
-      "name": "Blue Nike",
-      "description": "Running shoes",
+      "name": "Black Glasses",
+      "description": "Match every outfit",
       "price": 20,
-      "img": "./imgs/S1.png",
-      "cate": "Shoes",
+      "img": "./imgs/g5.png",
+      "cate": "Glasses",
       "counter": 1,
       "size": "M",
       "total": 20,
-      "id": 1
+      "id": 22
     },
     {
       "name": "R&B Nike",

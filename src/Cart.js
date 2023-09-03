@@ -1,40 +1,20 @@
-// import { useState} from "react";
-// import img from './/imgs/S2.png'
+
 import {RiDeleteBin6Line} from 'react-icons/ri'
-// import useFetch from './useFetch';
-// import toast, { Toaster } from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
+import img from './/imgs/empty_cart.svg'
 
 
 
 const Cart = ({data,isPending,error,getTotal,handleDelete,updateCounter}) => {
-  // console.log(getTotal)
-    // const [counter,setCounter] = useState(1);
-    // // const [cartinfo,setCartInfo] = useState(0)
-    // // const notify = () => toast.error('Item has been Removed');
-    // function increment() {
-    //     //setCount(prevCount => prevCount+=1);
-    //     setCounter(function (prevCount) {
-    //       return (prevCount += 1);
-    //     });
-    //   }
-    
-    //   function decrement() {
-    //     setCounter(function (prevCount) {
-    //       if (prevCount > 0) {
-    //         return (prevCount -= 1); 
-    //       } else {
-    //         return (prevCount = 0);
-    //       }
-    //     });
-    //   }
 
       const navigate = useNavigate();
 
       function handleClick() {
         navigate("pdf");
       }
+
+
 
 
       
@@ -58,7 +38,9 @@ const Cart = ({data,isPending,error,getTotal,handleDelete,updateCounter}) => {
           </div>
           </div></div>}
 
-       {data && data.map((data)=>(
+       {data &&
+       data.length !== 0?
+       data.map((data)=>(
          <div className="shop">
           <div className="cart">
           
@@ -90,7 +72,8 @@ const Cart = ({data,isPending,error,getTotal,handleDelete,updateCounter}) => {
               </div>
           </div>
           </div>  
-      ))}
+      )):<div className="empty-cart"><img src={img} alt="Empty wishlist" />
+      <h2>Your Cart is Empty Try adding some items</h2></div>}
       <Toaster />
     </div>
     );
