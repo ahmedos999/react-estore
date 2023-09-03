@@ -1,9 +1,8 @@
 import {Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 const Tabs = (props) => {
-  // console.log(props.changeTab)
-//   const [isActive, setIsActive] = useState(false);
-//lis[i].childNodes.item(0).nodeValue
+  const {t} = useTranslation()
 
   const handleClick = (change) => {
     // 👇️ toggle isActive state on click
@@ -22,11 +21,11 @@ const Tabs = (props) => {
   handleClick(props.curr)
     return ( <div className="tabs">
         <ul>
-            <Link to="/Shoes"><li onClick={()=>props.changeTab('Shoes')}>Shoes</li></Link>
-            <Link to="/T-Shirts"><li onClick={()=>props.changeTab('T-Shirts')}>T-Shirts</li></Link>
-            <Link to="/Pants"><li onClick={()=>props.changeTab('Pants')}>Pants</li></Link>
-            <Link to="/Accessories"><li onClick={()=>props.changeTab('Accessories')}>Accessories</li></Link>
-            <Link to="/Glasses"><li onClick={()=>props.changeTab('Glasses')}>Glasses</li></Link>
+            <Link to="/Shoes"><li onClick={()=>props.changeTab('Shoes')}>{t('tab_1')}</li></Link>
+            <Link to="/T-Shirts"><li onClick={()=>props.changeTab('T-Shirts')}>{t('tab_2')}</li></Link>
+            <Link to="/Pants"><li onClick={()=>props.changeTab('Pants')}>{t('tab_3')}</li></Link>
+            <Link to="/Accessories"><li onClick={()=>props.changeTab('Accessories')}>{t('tab_4')}</li></Link>
+            <Link to="/Glasses"><li onClick={()=>props.changeTab('Glasses')}>{t('tab_5')}</li></Link>
         </ul>
     </div> );
 }

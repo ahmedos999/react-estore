@@ -4,11 +4,13 @@ import {MdFavorite} from "react-icons/md"
 import { Toaster } from 'react-hot-toast';
 import {Link} from 'react-router-dom';
 import img from './/imgs/wishlist.svg'
+import { useTranslation } from 'react-i18next'
 const Fav = (props) => {
+    const {t} = useTranslation()
     return ( <div className="maincontent">
-    <h2>Your Favorite items are here <MdFavorite></MdFavorite></h2>
+    <h2>{t('fav')} <MdFavorite></MdFavorite></h2>
     <div className="show">
-    {props.FavisPending && <div>Loading...</div>}
+    {props.FavisPending && <div>{t('loading')}</div>}
     {props.Faverror && <div> {props.Faverro} </div>}
     {props.Favdata && 
     props.Favdata.length!==0?
@@ -25,7 +27,7 @@ const Fav = (props) => {
     </div>
     ))
     :<div className="wishlist"><img src={img} alt="Empty wishlist" />
-    <h2>Your Wishlist is Empty Try adding some items <MdFavorite></MdFavorite></h2></div>
+    <h2>{t('fav_placeholder')} <MdFavorite></MdFavorite></h2></div>
     }
     </div>
     <Toaster></Toaster>

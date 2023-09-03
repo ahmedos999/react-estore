@@ -13,6 +13,9 @@ import Fav from './Fav';
 import { useState,useEffect } from "react";
 import toast from 'react-hot-toast';
 import PDF from './pdf';
+
+import React, {Suspense } from 'react';
+import './i18n'
  
 
 
@@ -42,6 +45,8 @@ function App() {
     icon: '⚠️',
   });
 
+
+  
   
 
   useEffect(()=>{
@@ -213,6 +218,7 @@ const getTotal = (data) =>{
 }
 
   return (
+    <Suspense fallback={null}>
     <Router>
       <div className="App">
       <Navbar data={data}></Navbar>
@@ -240,6 +246,7 @@ const getTotal = (data) =>{
       </Routes>
     </div>
     </Router>
+    </Suspense>
   );
 }
 

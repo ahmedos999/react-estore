@@ -13,10 +13,14 @@ import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 import { useNavigate } from "react-router-dom";
 
+import { useTranslation } from 'react-i18next'
+
 
 
 const Main = () => {
   const navigate = useNavigate();
+  const {t} = useTranslation()
+  
 
   function handleClick() {
     navigate("Shoes");
@@ -28,10 +32,10 @@ const Main = () => {
         <div className="intro">
             <FaShopify className='into-icon'></FaShopify>
             <h2>
-            Welcome the E-Store
+            {t('main_title')}
             </h2>
-            <p>Checkout our finest Offers and Sales <br /> Shop easliy and find what you like with great offers</p>
-            <button onClick={handleClick}>Shop Now</button>
+            <p>{t('main_subtitle')} <br /> {t('main_subtitle_2')}</p>
+            <button onClick={handleClick}>{t('main_btn')}</button>
         </div>
         <div className='test'>
         <Swiper

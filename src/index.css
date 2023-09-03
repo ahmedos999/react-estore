@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Poppins&family=Tajawal&display=swap');
 *{
   margin: 0;
-  font-family: 'Poppins';
+
+  /* direction: rtl; */
   /* color: #333; */
 }
 body{
   background-color: #e7e7e7;
   background-image: url("/src/imgs/bg.jpg");
+  font-family: 'Poppins', sans-serif;
+}
+.dir_rtl{
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif ;
+}
+.dir_ltr{
+  direction: ltr;
+  font-family: 'Poppins', sans-serif;
 }
 button{
   cursor: pointer;
@@ -55,6 +65,7 @@ button{
 .maincontent {
   margin-top: 20px;
   margin-left: 30px;
+  margin-right: 20px;
 }
 /* .maincontent-2 {
   margin-top: 20px;
@@ -65,6 +76,7 @@ button{
 }
 .card:nth-child(1){
   margin-left: 20px;
+  margin-right: 20px;
 }
 /* .show>a{
   text-decoration: none;
@@ -192,7 +204,7 @@ button{
 
 /* main content style ends */
 
-/* tabs style start */
+/* tabs style start icons*/
 .tabs{
   display: flex;
   justify-content: center;
@@ -232,7 +244,7 @@ button{
 }
 
 .icons{
-  width: 120px;
+  width: 220px;
   display: flex;
   justify-content: space-around
 }
@@ -245,6 +257,18 @@ button{
   font-size: 28px;
   box-shadow: rgba(1, 1, 1, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
   transition: transform .5s ease-in-out;
+}
+.icon-2{
+  padding: 8px;
+  border-radius: 50px;
+  background-color: white;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
 }
 .icon:hover{
   transform: rotate(360deg);
