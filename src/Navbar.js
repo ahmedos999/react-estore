@@ -3,12 +3,14 @@ import { BiCart } from 'react-icons/bi';
 import {Link} from 'react-router-dom';
 import {MdFavoriteBorder} from "react-icons/md"
 import i18next from 'i18next';
+import { useTranslation } from 'react-i18next'
 
 
 
 
 
 const Navbar = (data) => {
+    const {t} = useTranslation()
     const currentLanguage = i18next.language;
     if(currentLanguage === 'ar'){
         const body = document.getElementsByTagName('body');
@@ -36,7 +38,7 @@ const Navbar = (data) => {
     }
     return ( 
     <div className="nav">
-        <Link to="/"><h4>E-Store</h4></Link>
+        <Link to="/"><h4>{t('name')}</h4></Link>
         <div className="icons">
         <Link to="/Cart"><div className="badge-2"><BiCart className='icon'/>{data.data&&<div className="badgenumber">{data.data.length}</div>}</div></Link>
         <Link to="/Favorite"><MdFavoriteBorder className='icon'></MdFavoriteBorder></Link>

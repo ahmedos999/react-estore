@@ -271,7 +271,60 @@
       "color": "Black",
       "total": 20,
       "id": 22
+    },
+    {
+      "name": "Yellow Puma",
+      "description": "Good for Showing off",
+      "price": 18,
+      "img": "./imgs/S5.png",
+      "cate": "Shoes",
+      "counter": 1,
+      "size": "M",
+      "color": "Black",
+      "total": 18,
+      "id": 5
     }
   ],
-  "fav": []
+  "fav": [
+    {
+      "name": "Blue Nike",
+      "description": "Running shoes",
+      "price": 20,
+      "img": "./imgs/S1.png",
+      "cate": "Shoes",
+      "id": 1
+    },
+    {
+      "name": "White T-Shirt",
+      "description": "high Quailty T-shirt",
+      "price": 22,
+      "img": "./imgs/t2.png",
+      "cate": "T-Shirts",
+      "id": 6
+    },
+    {
+      "name": "Light Pants",
+      "description": "Good for Running",
+      "price": 38,
+      "img": "./imgs/j4.png",
+      "cate": "Pants",
+      "id": 14
+    },
+    {
+      "name": "Georg watch",
+      "description": "high Quailty watch",
+      "price": 60,
+      "img": "./imgs/w1.png",
+      "cate": "Accessories",
+      "id": 16
+    },
+    {
+      "name": "Black Glasses",
+      "description": "Match every outfit",
+      "price": 20,
+      "img": "./imgs/g5.png",
+      "cate": "Glasses",
+      "id": 22
+    }
+  ]
 }

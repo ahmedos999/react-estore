@@ -1,0 +1,374 @@
+{
+  "Shoes": [
+    {
+      "name": "نايك زرقاء",
+      "description": "احذية جري",
+      "price": 20,
+      "img": "./imgs/S1.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Shoes",
+      "id": 1
+    },
+    {
+      "name": "R&B نايك",
+      "description": "جيد للأزياء",
+      "price": 28,
+      "img": "./imgs/S2.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Shoes",
+      "id": 2
+    },
+    {
+      "name": "حذاء أسود ",
+      "description": "جيد للبدلات",
+      "price": 35,
+      "img": "./imgs/S3.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Shoes",
+      "id": 3
+    },
+    {
+      "name": "أديداس اسبورت",
+      "description": "احذية جري",
+      "price": 25,
+      "img": "./imgs/S4.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Shoes",
+      "id": 4
+    },
+    {
+      "name": "Yellow Puma",
+      "description": "مناسب و ظاهر اللون",
+      "price": 18,
+      "img": "./imgs/S5.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Shoes",
+      "id": 5
+    }
+  ],
+  "T-Shirts": [
+    {
+      "name": "تي شيرت أبيض",
+      "description": "تي شيرت عالي الجودة",
+      "price": 22,
+      "img": "./imgs/t2.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "T-Shirts",
+      "id": 6
+    },
+    {
+      "name": "الأصفر تي شيرت",
+      "description": "مناسب لجميع اللبسات",
+      "price": 25,
+      "img": "./imgs/t6.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "T-Shirts",
+      "id": 7
+    },
+    {
+      "name": "تي شيرت أسود",
+      "description": "قميص اللياقة البدنية",
+      "price": 28,
+      "img": "./imgs/t4.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "T-Shirts",
+      "id": 8
+    },
+    {
+      "name": "تي شيرت رمادي",
+      "description": "جيد للبدلات",
+      "price": 18,
+      "img": "./imgs/t5.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "T-Shirts",
+      "id": 9
+    },
+    {
+      "name": "بولو قميص",
+      "description": "Good for Running",
+      "price": 30,
+      "img": "./imgs/t3.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "T-Shirts",
+      "id": 10
+    }
+  ],
+  "Pants": [
+    {
+      "name": "ماكس بنطال",
+      "description": "بنطال عالي الجودة",
+      "price": 44,
+      "img": "./imgs/J1.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Pants",
+      "id": 11
+    },
+    {
+      "name": "بنطال بدلة",
+      "description": "مناسب كل البدل",
+      "price": 54,
+      "img": "./imgs/j2.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Pants",
+      "id": 12
+    },
+    {
+      "name": "بنطال ثقيلة",
+      "description": "بنطال عرض",
+      "price": 40,
+      "img": "./imgs/j3.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Pants",
+      "id": 13
+    },
+    {
+      "name": "بنطال خفيف",
+      "description": "جيد للجري",
+      "price": 38,
+      "img": "./imgs/j4.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Pants",
+      "id": 14
+    },
+    {
+      "name": "بنطال استايل",
+      "description": "جيد للعرض",
+      "price": 40,
+      "img": "./imgs/j5.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Pants",
+      "id": 15
+    }
+  ],
+  "Accessories": [
+    {
+      "name": "ساعة جورج",
+      "description": "ساعة جودة عالية",
+      "price": 60,
+      "img": "./imgs/w1.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Accessories",
+      "id": 16
+    },
+    {
+      "name": "ساعة رولكس",
+      "description": "ساعة فاخرة",
+      "price": 120,
+      "img": "./imgs/w2.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Accessories",
+      "id": 17
+    },
+    {
+      "name": "ساعة ذكية",
+      "description": "مناسبة لتمارين",
+      "price": 80,
+      "img": "./imgs/w3.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Accessories",
+      "id": 18
+    },
+    {
+      "name": "غير رسمي ساعة ",
+      "description": "جيد للأزياء",
+      "price": 40,
+      "img": "./imgs/w4.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Accessories",
+      "id": 19
+    },
+    {
+      "name": "ساعة خفيفة",
+      "description": "جيد للجري",
+      "price": 45,
+      "img": "./imgs/w5.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Accessories",
+      "id": 20
+    }
+  ],
+  "Glasses": [
+    {
+      "name": "نظارة شمسيه",
+      "description": "نظارات عالية الجودة",
+      "price": 20,
+      "img": "./imgs/g6.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 21
+    },
+    {
+      "name": "أسود نظارة",
+      "description": "تناسب جميع الازياء",
+      "price": 20,
+      "img": "./imgs/g5.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 22
+    },
+    {
+      "name": "نظارات القراءة",
+      "description": "جيد للكتب",
+      "price": 20,
+      "img": "./imgs/g4.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 23
+    },
+    {
+      "name": "نظارات عرض",
+      "description": "جيد لضوء النهار",
+      "price": 20,
+      "img": "./imgs/g7.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 24
+    },
+    {
+      "name": "نظارات رمادية",
+      "description": "جيد للبدلات",
+      "price": 20,
+      "img": "./imgs/g8.png",
+      "color": "أسود",
+      "size": "M",
+      "cate": "Glasses",
+      "id": 25
+    }
+  ],
+  "cart": [
+    {
+      "name": "R&B نايك",
+      "description": "جيد للأزياء",
+      "price": 28,
+      "img": "./imgs/S2.png",
+      "cate": "Shoes",
+      "counter": 1,
+      "size": "M",
+      "color": "أسود",
+      "total": 28,
+      "id": 2
+    },
+    {
+      "name": "ساعة جورج",
+      "description": "ساعة جودة عالية",
+      "price": 60,
+      "img": "./imgs/w1.png",
+      "cate": "Accessories",
+      "counter": 1,
+      "size": "M",
+      "color": "أسود",
+      "total": 60,
+      "id": 16
+    },
+    {
+      "name": "أديداس اسبورت",
+      "description": "احذية جري",
+      "price": 25,
+      "img": "./imgs/S4.png",
+      "cate": "Shoes",
+      "counter": 1,
+      "size": "M",
+      "color": "أسود",
+      "total": 25,
+      "id": 4
+    },
+    {
+      "name": "Yellow Puma",
+      "description": "مناسب و ظاهر اللون",
+      "price": 18,
+      "img": "./imgs/S5.png",
+      "cate": "Shoes",
+      "counter": 1,
+      "size": "M",
+      "color": "أسود",
+      "total": 18,
+      "id": 5
+    },
+    {
+      "name": "ساعة رولكس",
+      "description": "ساعة فاخرة",
+      "price": 120,
+      "img": "./imgs/w2.png",
+      "cate": "Accessories",
+      "counter": 1,
+      "size": "M",
+      "color": "أسود",
+      "total": 120,
+      "id": 17
+    }
+  ],
+  "fav": [
+    {
+      "name": "أديداس اسبورت",
+      "description": "احذية جري",
+      "price": 25,
+      "img": "./imgs/S4.png",
+      "cate": "Shoes",
+      "id": 4
+    },
+    {
+      "name": "حذاء أسود ",
+      "description": "جيد للبدلات",
+      "price": 35,
+      "img": "./imgs/S3.png",
+      "cate": "Shoes",
+      "id": 3
+    },
+    {
+      "name": "تي شيرت رمادي",
+      "description": "جيد للبدلات",
+      "price": 18,
+      "img": "./imgs/t5.png",
+      "cate": "T-Shirts",
+      "id": 9
+    },
+    {
+      "name": "ساعة رولكس",
+      "description": "ساعة فاخرة",
+      "price": 120,
+      "img": "./imgs/w2.png",
+      "cate": "Accessories",
+      "id": 17
+    },
+    {
+      "name": "نظارات القراءة",
+      "description": "جيد للكتب",
+      "price": 20,
+      "img": "./imgs/g4.png",
+      "cate": "Glasses",
+      "id": 23
+    },
+    {
+      "name": "ساعة ذكية",
+      "description": "مناسبة لتمارين",
+      "price": 80,
+      "img": "./imgs/w3.png",
+      "cate": "Accessories",
+      "id": 18
+    }
+  ]
+}
