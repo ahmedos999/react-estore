@@ -8,8 +8,10 @@ import {
     PDFViewer,
   } from "@react-pdf/renderer";
   import img from './/imgs/companyLogo.jpg'
+  import { useTranslation } from 'react-i18next'
 
 const PDF = ({data,isPending,error,getTotal}) => {
+  const {t} = useTranslation()
     var currentdate = new Date(); 
 var datetime =  currentdate.getDate() + "/"
                 + (currentdate.getMonth()+1)  + "/" 
