@@ -297,18 +297,6 @@
       "id": 4
     },
     {
-      "name": "Yellow Puma",
-      "description": "مناسب و ظاهر اللون",
-      "price": 18,
-      "img": "./imgs/S5.png",
-      "cate": "Shoes",
-      "counter": 1,
-      "size": "M",
-      "color": "أسود",
-      "total": 18,
-      "id": 5
-    },
-    {
       "name": "ساعة رولكس",
       "description": "ساعة فاخرة",
       "price": 120,
